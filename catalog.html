@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="site-navigation">
-        <p class="main-logo">Техномарт</p>
+        <p class="main-logo"><a href="index.html">Техномарт</a></p>
           <ul>
             <li><!-- Здесь будет форма -->Поиск</li>
             <li><button type="button">Закладки</button></li>
@@ -24,6 +24,7 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
         <section class="to-your-account">
+          <h2 class="visually-hidden">Работа с личным кабинетом</h2>
             <p class="login"><a href="#">Равшан Джамшутович</a></p>
           <ul>
             <li class="order-list"><a href="#">Мои заказы</a></li>
@@ -55,18 +56,33 @@
 
       <h1>Перфораторы</h1>
 
+      <section class="filter">
+        <h2>Фильтр:</h2>
+        <label for="pricecount">Цена:</label>
+        0<input type="range" min="0" max="30000" step="1" value="1000" id="pricecount">30000
+      </section>
+
+      <section class="sorting">
+        <h2>Сортировка:</h2>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+          </ul>
+      </section>
+
       <section class="filters">
 
        <h2 class="Manufacturers">Производители</h2>
-         <input <!--Здесь будет форма-->>BOSCH
-         <input <!--Здесь будет форма-->>Интерскол
-         <input <!--Здесь будет форма-->>Makita
-         <input <!--Здесь будет форма-->>Dewalt
-         <input <!--Здесь будет форма-->>Hitachi
+         <input> <!--Здесь будет форма--> BOSCH
+         <input> <!--Здесь будет форма--> Интерскол
+         <input> <!--Здесь будет форма--> Makita
+         <input> <!--Здесь будет форма--> Dewalt
+         <input> <!--Здесь будет форма--> Hitachi
 
         <h2 class="Power-supply">Питание</h2>
-          <input <!--Здесь будет форма-->>Аккумуляторные
-          <input <!--Здесь будет форма-->>Сетевые
+          <input> <!--Здесь будет форма-->Аккумуляторные
+          <input> <!--Здесь будет форма-->Сетевые
 
         <button type="button">Показать</button>
 
@@ -219,6 +235,21 @@
           </li>
         </ul>
       </section>
+
+      <section class="pagination">
+        <h2 class="visually-hidden">Переход по страницам</h2>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item-next"><a href="#">Следующая</a></li>
+      </ul>
+    </section>
+      <article>
+      <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </article>
     </main>
 
     <footer>
