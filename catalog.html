@@ -12,9 +12,9 @@
       <p class="main-logo"><a href="index.html"><img src="img/technomart.svg" alt="Техномарт"></a></p>
       <ul>
         <li>
-          <!-- Здесь будет форма -->Поиск</li>
-        <li><button type="button">Закладки</button></li>
-        <li><button type="button">Корзина</button></li>
+          <!-- Здесь будет форма --><img src="img/search.svg" alt="Поиск">Поиск</li>
+        <li><button type="button"><img src="img/icon-bookmark.svg" alt="Закладки">Закладки</button></li>
+        <li><button type="button"><img src="img/cart-icon.svg" alt="Корзина">Корзина</button></li>
         <li>
           <!-- Здесь будет форма -->Оформить заказ</li>
       </ul>
@@ -24,17 +24,13 @@
       строительных материалов<br>
       и инструментов для ремонта</h2>
 
-    <p>+7(812)555-05-55</p>
+    <p><img src="img/icon-phone.svg" alt="Телефон">+7(812)555-05-55</p>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
     <section class="to-your-account">
       <h2 class="visually-hidden">Работа с личным кабинетом</h2>
-<<<<<<< HEAD
       <p class="login"><a href="#">
           <img src="img/icon-user.svg" alt="Юзер иконка">Равшан Джамшутович<img src="img/icon-logout.svg" alt="Иконка выхода"></a></p>
-=======
-      <p class="login"><a href="#">Равшан Джамшутович</a></p>
->>>>>>> parent of 966d88e... Готовим графику личного проекта
       <ul>
         <li class="order-list"><a href="#">Мои заказы</a></li>
         <li class="your-account"><a href="#">Личный кабинет</a></li>
@@ -57,7 +53,7 @@
   <main class="container">
 
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html"><img src="img/icon-home.svg" alt="Домой"></a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Инструмент</a></li>
       <li class="breadcrumbs-current">Перфораторы</li>
@@ -66,28 +62,37 @@
     <h1>Перфораторы</h1>
 
     <section class="filter">
-      <h2>Фильтр:</h2>
+      <div class="filter_name">
+        <h2>Фильтр:</h2>
+      </div>
 
       <section class="filter_pricecount">
         <h2>Цена:</h2>
-        0<input type="range" min="0" max="30000" step="1" value="1000" id="pricecount">30000
+        0<input type="range" min="0" max="30000" step="1" value="1000" id="pricecount">30000>
       </section>
 
-    <section class="filter_manufacturers">
+      <section class="filter_manufacturers">
 
-      <h2>Производители</h2>
-      <input>
-      <!--Здесь будет форма--> BOSCH
-      <input>
-      <!--Здесь будет форма--> Интерскол
-      <input>
-      <!--Здесь будет форма--> Makita
-      <input>
-      <!--Здесь будет форма--> Dewalt
-      <input>
-      <!--Здесь будет форма--> Hitachi
+        <h2>Производители</h2>
+        <input>
+        <!--Здесь будет форма-->
+        <img src="img/checkbox-on.svg" alt="Чекбокс">BOSCH
+        <input>
+        <!--Здесь будет форма-->
+        <img src="img/checkbox-off.svg" alt="Чекбокс выключен">Интерскол
+        <input>
+        <!--Здесь будет форма-->
+        <img src="img/checkbox-on.svg" alt="Чекбокс">Makita
+        <input>
+        <!--Здесь будет форма-->
+        <img src="img/checkbox-off.svg" alt="Чекбокс выключен">Dewalt
+        <input>
+        <!--Здесь будет форма-->
+        <img src="img/checkbox-off.svg" alt="Чекбокс выключен">Hitachi
 
-<<<<<<< HEAD
+      </section>
+      <section class="filter_power-supply">
+
         <h2>Питание</h2>
         <input>
         <!--Здесь будет форма-->
@@ -95,30 +100,22 @@
         <input>
         <!--Здесь будет форма-->
         <img src="img/radio-off.svg" alt="Чекбокс выключен">Сетевые
-=======
+
+        <button type="button">Показать</button>
+
+      </section>
     </section>
-    <section class="filter_power-supply">
->>>>>>> parent of 966d88e... Готовим графику личного проекта
-
-      <h2>Питание</h2>
-      <input>
-      <!--Здесь будет форма-->Аккумуляторные
-      <input>
-      <!--Здесь будет форма-->Сетевые
-
-      <button type="button">Показать</button>
-
-    </section>
-  </section>
 
     <section class="filter_sorting">
       <h2>Сортировка:</h2>
+
+
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По функционалу</a></li>
-        <li><button type="button">up</button></li>
-        <li><button type="button">down</button></li>
+        <li><button type="button"></button></li>
+        <li><button type="button"></button></li>
       </ul>
     </section>
 
@@ -134,7 +131,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000"></a></p>
+              <img src="img/Perforator-1.png" alt="Перфоратор BOSCH BFG 3000"></a></p>
           <p class="catalog-item-price">
             <b><s>22500 Р.</s></b>
             <b>15500 Р.</b>
@@ -150,7 +147,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000"></a></p>
+              <img src="img/Perforator-2.png" alt="Перфоратор BOSCH BFG 6000"></a></p>
           <p class="catalog-item-price">
             <b><s>30500 Р.</s></b>
             <b>25500 Р.</b>
@@ -166,7 +163,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000"></a></p>
+              <img src="img/Perforator-3.png" alt="Перфоратор BOSCH BFG 2000"></a></p>
           <p class="catalog-item-price">
             <b>12500 Р.</b>
           </p>
@@ -181,7 +178,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-4.jpg" alt="Перфоратор BOSCH BFG 3000"></a></p>
+              <img src="img/Perforator-1.png" alt="Перфоратор BOSCH BFG 3000"></a></p>
           <p class="catalog-item-price">
             <b><s>22500 Р.</s></b>
             <b>15500 Р.</b>
@@ -198,7 +195,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-5.jpg" alt="Перфоратор BOSCH BFG 6000"></a></p>
+              <img src="img/Perforator-2.png" alt="Перфоратор BOSCH BFG 6000"></a></p>
           <p class="catalog-item-price">
             <b><s>30500 Р.</s></b>
             <b>25500 Р.</b>
@@ -214,7 +211,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-6.jpg" alt="Перфоратор BOSCH BFG 2000"></a></p>
+              <img src="img/Perforator-3.png" alt="Перфоратор BOSCH BFG 2000"></a></p>
           <p class="catalog-item-price">
             <b>12500 Р.</b>
           </p>
@@ -229,7 +226,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-7.jpg" alt="Перфоратор BOSCH BFG 3000"></a></p>
+              <img src="img/Perforator-1.png" alt="Перфоратор BOSCH BFG 3000"></a></p>
           <p class="catalog-item-price">
             <b><s>22500 Р.</s></b>
             <b>15500 Р.</b>
@@ -246,7 +243,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-8.jpg" alt="Перфоратор BOSCH BFG 6000"></a></p>
+              <img src="img/Perforator-2.png" alt="Перфоратор BOSCH BFG 6000"></a></p>
           <p class="catalog-item-price">
             <b><s>30500 Р.</s></b>
             <b>25500 Р.</b>
@@ -262,7 +259,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/product-9.jpg" alt="Перфоратор BOSCH BFG 2000"></a></p>
+              <img src="img/Perforator-3.png" alt="Перфоратор BOSCH BFG 2000"></a></p>
           <p class="catalog-item-price">
             <b>12500 Р.</b>
           </p>
@@ -315,15 +312,9 @@
 
     <div class="footer-social">
       <ul>
-<<<<<<< HEAD
         <li><a class=”social-button” href="#"><img src="img/vk-icon.svg" alt="Вконтакте">Vk</a></li>
         <li><a class=”social-button” href="#"><img src="img/fb-icon.svg" alt="Фейсбук">Facebook</a></li>
         <li><a class=”social-button” href="#"><img src="img/insta-icon.svg" alt="Инстаграм">Instagram</a></li>
-=======
-        <li><a class=”social-button” href="#">Vk</a></li>
-        <li><a class=”social-button” href="#">Facebook</a></li>
-        <li><a class=”social-button” href="#">Instagram</a></li>
->>>>>>> parent of 966d88e... Готовим графику личного проекта
       </ul>
     </div>
 
