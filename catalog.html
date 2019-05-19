@@ -12,9 +12,9 @@
       <p class="main-logo"><a href="index.html"><img src="img/svg/technomart.svg" alt="Техномарт"></a></p>
       <ul>
         <li>
-          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="question" placeholder="Найти" id="form-search-question">
-            <label class="visually-hidden" for="form-search-question">Что нужно найти?</label>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="question" placeholder="Поиск" id="form-search-question">
+            <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
           </form>
         </li>
         <li><button type="button">Закладки</button></li>
@@ -338,15 +338,13 @@
 
   <section class="modal-cart">
     <h2 class="visually-hidden">Товар</h2>
-    <p><img src="img/modal-cart-1.jpg" alt="Успешно"> Товар добавлен в корзину!</p>
-    <form class="modal-cart-order-place" action="https://echo.htmlacademy.ru" method="post">
-      <input class="modal-cart-order-place-button" name="submit-order" type="submit" id="modal-submit-button" value="Оформить заказ">
-      <label class="visually-hidden" for="modal-submit-button">Оформить заказ</label>
-      <input class="modal-cart-continue" type="button" name="continue-buying" id="modal-button" value="Продолжить покупки">
-      <label class="visually-hidden" for="modal-button">Продолжить покупки</label>
+    <p><img src="img/svg/modal-cart-1.svg" alt="Успешно"> Товар добавлен в корзину!</p>
+    <form class="modal-cart-order-place" action="https://echo.htmlacademy.ru" method="get">
+      <button class="modal-cart-order-place-button" name="submit-order" type="submit" value="Оформить заказ">Оформить заказ</button>
+      <button class="modal-cart-continue" type="submit" name="continue-buying" value="Продолжить покупки">Продолжить покупки</button>
     </form>
     <p><button class="modal-cart-close" type="button">
-        <img src="img/modal-cart-2.jpg" alt="Закрыть информационное окно товара"> </button> </p>
+        <img src="img/svg/modal-cart-2.svg" alt="Закрыть информационное окно товара"> </button> </p>
   </section>
 </body>
 
