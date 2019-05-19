@@ -291,19 +291,17 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <ul>
         <li class="modal-write-us-name">
-          <p>Ваше имя:
+          <label>Ваше имя:
             <input type="text" name="name" id="name-place" placeholder="Имя Фамилия">
-            <label class="visually-hidden" for="name-place">Имя и фамилия</label></p>
-        </li>
+          </label></li>
         <li class="modal-write-us-email">
-          <p>Ваше e-mail:
-            <input type="text" name="email" id="email-place" placeholder="email@example.com">
-            <label class="visually-hidden" for="email-place">Ваш e-mail</label></p>
-        </li>
+          <label>Ваш e-mail:
+            <input type="email" name="email" id="email-place" placeholder="email@example.com">
+          </label> </li>
         <li class="modal-write-us-text">
-          <p>Текст письма:
-            <input type="text" name="written-text" id="written-text-place" placeholder="В свободной форме">
-            <label class="visually-hidden" for="written-text-place">Текст письма</label></p>
+          <label>Текст письма:
+            <textarea name="written-text" id="written-text-place" placeholder="В свободной форме"></textarea>
+          </label>
         </li>
       </ul>
       <button class="modal-write-us-send" type="submit">Отправить</button>
