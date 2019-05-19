@@ -12,11 +12,14 @@
       <p class="main-logo"><img src="img/svg/technomart.svg" alt="Техномарт"></p>
       <ul>
         <li>
-          <!-- Здесь будет форма -->Поиск</li>
-        <li><button type="button">Закладки</button></li>
-        <li><button type="button">Корзина</button></li>
-        <li>
-          <!-- Здесь будет форма -->Оформить заказ</li>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="question" placeholder="Найти" id="form-search-question">
+            <label class="visually-hidden" for="form-search-question">Что нужно найти?</label>
+          </form>
+        </li>
+        <li><a href="#">Закладки</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Оформить заказ</a></li>
       </ul>
     </nav>
 
@@ -56,7 +59,6 @@
         <ul>
           <li>
             <h3>Материалы</h3>
-            Материалы
             <a href="#">На любой вкус</a>
           </li>
           <li>
@@ -284,6 +286,38 @@
 
     <p class="htmlacademy-copyright">Разработано —<br><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
   </footer>
+  <section class="modal-write-us">
+    <h2 class="visually-hidden">Напишите нам!</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <ul>
+        <li class="modal-write-us-name">
+          <p>Ваше имя:
+            <input type="text" name="name" id="name-place" placeholder="Имя Фамилия">
+            <label class="visually-hidden" for="name-place">Имя и фамилия</label></p>
+        </li>
+        <li class="modal-write-us-email">
+          <p>Ваше e-mail:
+            <input type="text" name="email" id="email-place" placeholder="email@example.com">
+            <label class="visually-hidden" for="email-place">Ваш e-mail</label></p>
+        </li>
+        <li class="modal-write-us-text">
+          <p>Текст письма:
+            <input type="text" name="written-text" id="written-text-place" placeholder="В свободной форме">
+            <label class="visually-hidden" for="written-text-place">Текст письма</label></p>
+        </li>
+      </ul>
+      <button class="modal-write-us-send" type="submit">Отправить</button>
+    </form>
+    <p><button class="modal-write-us-close" type="button">
+        <img src="img/modal-cart-2.jpg" alt="Закрыть форму обратной связи"></button> </p>
+  </section>
+  <section class="modal-popup-map">
+    <h2 class="visually-hidden">Карта с указанием адреса магазина - г. Санкт-Петербург, улица Большая Конюшенная, дом 19</h2>
+    <p><img src="img/map-popup.jpg" alt="Карта с указанием адреса магазина - г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
+    </p>
+    <p><button class="modal-write-us-close" type="button">
+        <img src="img/modal-cart-2.jpg" alt="Закрыть форму обратной связи"></button> </p>
+  </section>
 </body>
 
 </html>

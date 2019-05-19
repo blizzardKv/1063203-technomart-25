@@ -12,11 +12,14 @@
       <p class="main-logo"><a href="index.html"><img src="img/svg/technomart.svg" alt="Техномарт"></a></p>
       <ul>
         <li>
-          <!-- Здесь будет форма -->Поиск</li>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="question" placeholder="Найти" id="form-search-question">
+            <label class="visually-hidden" for="form-search-question">Что нужно найти?</label>
+          </form>
+        </li>
         <li><button type="button">Закладки</button></li>
         <li><button type="button">Корзина</button></li>
-        <li>
-          <!-- Здесь будет форма -->Оформить заказ</li>
+        <li><button type="button">Оформить заказ</button></li>
       </ul>
     </nav>
 
@@ -29,14 +32,14 @@
     </p>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-    <section class="to-your-account">
+    <section class="main-account">
       <h2 class="visually-hidden">Работа с личным кабинетом</h2>
-      <p class="login"><a href="#">
+      <p class="main-account-login"><a href="#">
           Равшан Джамшутович
         </a></p>
       <ul>
-        <li class="order-list"><a href="#">Мои заказы</a></li>
-        <li class="your-account"><a href="#">Личный кабинет</a></li>
+        <li class="main-account-order-list"><a href="#">Мои заказы</a></li>
+        <li class="main-account-your-account"><a href="#">Личный кабинет</a></li>
       </ul>
     </section>
 
@@ -65,57 +68,61 @@
     <h1>Перфораторы</h1>
 
     <section class="filter">
-      <div class="filter_name">
+      <div class="filter-name">
         <h2>Фильтр:</h2>
       </div>
 
-      <section class="filter_pricecount">
+      <section class="filter-pricecount">
         <h2>Цена:</h2>
         0<input type="range" min="0" max="30000" step="1" value="1000" id="pricecount">30000
       </section>
-
-      <section class="filter_manufacturers">
-
-        <h2>Производители</h2>
-        <input>
-        <!--Здесь будет форма-->
-        BOSCH
-        <input>
-        <!--Здесь будет форма-->
-        Интерскол
-        <input>
-        <!--Здесь будет форма-->
-        Makita
-        <input>
-        <!--Здесь будет форма-->
-        Dewalt
-        <input>
-        <!--Здесь будет форма-->
-        Hitachi
-
-      </section>
-      <section class="filter_power-supply">
-
-        <h2>Питание</h2>
-        <input>
-        <!--Здесь будет форма-->
-        Аккумуляторные
-        <input>
-        <!--Здесь будет форма-->
-        Сетевые
-
-        <h2>Питание</h2>
-        <input>
-        <!--Здесь будет форма-->Аккумуляторные
-        <input>
-        <!--Здесь будет форма-->Сетевые
-
-        <button type="button">Показать</button>
-
-      </section>
     </section>
 
-    <section class="filter_sorting">
+    <section class="filter-manufacturers">
+      <h2 class="visually-hidden">Производители и питание</h2>
+      <form class="filter-manufacturers-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
+              <label for="filter-bosch">Bosch</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">Интерскол</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">Makita</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input-radio" type="radio" name="supply-group" value="rechargeable" id="filter-recharge" checked>
+              <label for="filter-recharge">Аккумуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-radio" type="radio" name="supply-group" value="networked" id="filter-networked">
+              <label for="filter-networked">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="filter-sorting">
       <h2>Сортировка:</h2>
       <ul>
         <li><a href="#">По цене</a></li>
@@ -125,7 +132,6 @@
         <li><button type="button">Кнопка вниз</button></li>
       </ul>
     </section>
-
     <section class="catalog">
       <h2 class="visually-hidden">Список перфораторов</h2>
       <ul class="catalog-list">
@@ -319,15 +325,9 @@
 
     <div class="footer-social">
       <ul>
-        <li><a class=”social-button” href="#">
-            Vk
-          </a></li>
-        <li><a class=”social-button” href="#">
-            Facebook
-          </a></li>
-        <li><a class=”social-button” href="#">
-            Instagram
-          </a></li>
+        <li><a class=”social-button” href="#">Vk</a></li>
+        <li><a class=”social-button” href="#">Facebook</a></li>
+        <li><a class=”social-button” href="#">Instagram</a></li>
       </ul>
     </div>
 
@@ -335,6 +335,19 @@
 
     <p class="htmlacademy-copyright">Разработано —<br><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
   </footer>
+
+  <section class="modal-cart">
+    <h2 class="visually-hidden">Товар</h2>
+    <p><img src="img/modal-cart-1.jpg" alt="Успешно"> Товар добавлен в корзину!</p>
+    <form class="modal-cart-order-place" action="https://echo.htmlacademy.ru" method="post">
+      <input class="modal-cart-order-place-button" name="submit-order" type="submit" id="modal-submit-button" value="Оформить заказ">
+      <label class="visually-hidden" for="modal-submit-button">Оформить заказ</label>
+      <input class="modal-cart-continue" type="button" name="continue-buying" id="modal-button" value="Продолжить покупки">
+      <label class="visually-hidden" for="modal-button">Продолжить покупки</label>
+    </form>
+    <p><button class="modal-cart-close" type="button">
+        <img src="img/modal-cart-2.jpg" alt="Закрыть информационное окно товара"> </button> </p>
+  </section>
 </body>
 
 </html>
