@@ -48,7 +48,8 @@ a {
   background-color: #f4f7f9;
 }
 
-.site-navigation {
+.site-navigation,
+.form-search-input {
   background-color: #293449;
 }
 
