@@ -77,31 +77,30 @@
             <h3>Доставка</h3>
             <a href="#">Бесплатно</a>
           </li>
-          <li>
-            <div class="slide">
-              <h2 class="visually-hidden">Блоки слайдера</h2>
-              <div><button type="button" class="left-arrow">left</button></div>
-              <div><button type="button" class="right-arrow">right</button></div>
-              <div class="slide-image-block">
-                <h3>Дрели</h3>
-                <p>Cоседям на радость</p>
-                <img src="img/slider-1.jpg" alt="Картинка дрели и брутального мужика">
-                <a class="button" href="catalog.html">Открыть каталог</a>
-              </div>
-              <div class="slider-image-block">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <img src="img/slider-2.jpg" alt="Картинка перфоратора и другого брутального мужика">
-                <a class="button" href="catalog.html">Открыть каталог</a>
-              </div>
-              <div><button type="button" class="slider-moving-point">1</button>
-                <button type="button" class="slider-moving-point">2</button>
-              </div>
-            </div>
         </ul>
+        <div class="slide">
+          <h2 class="visually-hidden">Блоки слайдера</h2>
+          <div><button type="button" class="left-arrow" aria-label="Кнопка переключения слайдера влево">left</button></div>
+          <div><button type="button" class="right-arrow" aria-label="Кнопка переключения слайдера вправо">right</button></div>
+          <div class="slide-image-block">
+            <h3>Дрели</h3>
+            <p>Cоседям на радость</p>
+            <img src="img/slider-1.jpg" alt="Картинка дрели и брутального мужика">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="slider-image-block">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/slider-2.jpg" alt="Картинка перфоратора и другого брутального мужика">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div><button type="button" class="slider-moving-point" aria-label="Кнопка переключения слайдера">1</button>
+            <button type="button" class="slider-moving-point" aria-label="Кнопка переключения слайдера">2</button>
+          </div>
+        </div>
       </nav>
     </section>
-    <section class=" goods">
+    <section class="goods">
       <div class="goods_title_and_button">
         <h2>Популярные товары:</h2>
         <a href="items.html">Все популярные товары</a>
@@ -124,7 +123,7 @@
             </p>
             <p class="catalog-item-order">
               <button class="catalog-item-order-buy" type="button" name="button-buy">Купить</button>
-              <button class="catalog-item-order-buy" type="button" name="button-buy">В закладки</button>
+              <button class="catalog-item-order-to-bookmarks" type="button" name="button-to-bookmarks">В закладки</button>
             </p>
           </li>
 
@@ -194,7 +193,7 @@
     <section class="manufacturers">
       <div class="manufacturers-title">
         <h2>Популярные производители:</h2>
-        <button class="manufacturers-title-button" type="button">Все производители</button>
+        <a class="manufacturers-title-link" href="#">Все производители</a>
       </div>
       <div class="manufacturers_logo">
         <ul>
