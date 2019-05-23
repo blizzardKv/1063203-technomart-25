@@ -13,36 +13,36 @@
 <body>
   <header class="main-header">
     <nav class="site-navigation">
-      <p class="main-logo"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
+      <p class="site-navigation__logo"><img class="site-navigation__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
       <ul class="site-navigation-list">
         <li class="site-navigation-list__item">
-          <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
-            <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="search-form__input" type="search" name="question" placeholder="Поиск:" id="search-form-question">
+            <label class="visually-hidden" for="search-form-question">Поисковая строка</label>
           </form>
         </li>
-        <li class="site-navigation-lisе__bookmarks"><a href="#">Закладки</a></li>
-        <li class="site-navigation-list__basket"><a href="#">Корзина</a></li>
-        <li class="site-navigation-list__order"><a href="#">Оформить заказ</a></li>
+        <li class="site-navigation-list__item"><a href="#">Закладки</a></li>
+        <li class="site-navigation-list__item"><a href="#">Корзина</a></li>
+        <li class="site-navigation-list__item"><a href="#">Оформить заказ</a></li>
       </ul>
     </nav>
 
-    <h2 class="main-headline">Интернет-магазин<br>
+    <h2 class="main-header__headline">Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта</h2>
-    <p class="telephone-number">
+    <p class="main-header__telephone-number">
       +7(812)555-05-55
     </p>
-    <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-    <section class="main-account-catalog">
+    <section class="main-account">
       <h2 class="visually-hidden">Работа с личным кабинетом</h2>
-      <p class="main-account-catalog__login"><a href="#">
+      <p class="main-account__login"><a href="#">
           Равшан Джамшутович
         </a></p>
-      <ul class="main-account-actions">
-        <li class="main-account-actions__orders"><a href="#">Мои заказы</a></li>
-        <li class="main-account-catalog__to-cabinet"><a href="#">Личный кабинет</a></li>
+      <ul class="main-account-list">
+        <li class="main-account-list__orders"><a href="#">Мои заказы</a></li>
+        <li class="main-account-list__to-cabinet"><a href="#">Личный кабинет</a></li>
       </ul>
     </section>
 
@@ -62,22 +62,24 @@
   <main class="container">
 
     <ul class="breadcrumbs-list">
-      <li class="breadcrumbs-list__item"><a href="index.html"><img src="img/svg/icon-home.svg" alt="Домой" width="14" height="12"></a></li>
+      <li class="breadcrumbs-list__item"><a href="index.html"><img src="img/svg/icon-home.svg" alt="Домой" width="15" height="12"></a></li>
       <li class="breadcrumbs-list__item"><a href="catalog.html">Каталог</a></li>
       <li class="breadcrumbs-list__item"><a href="#">Инструмент</a></li>
-      <li class="breadcrumbs-list__current">Перфораторы</li>
+      <li class="breadcrumbs-list__item">Перфораторы</li>
     </ul>
 
-    <h1 class="main-headline-catalog">Перфораторы</h1>
+    <h1 class="container__title">Перфораторы</h1>
 
     <section class="filter">
-      <div class="filter__name">
+      <div class="filter__title">
         <h2>Фильтр:</h2>
       </div>
 
       <section class="filter__pricecount">
         <h2>Цена:</h2>
-        0<input type="range" min="0" max="30000" step="1" value="1000" id="pricecount">30000
+        <input class="filter__pricecount_range" type="range" min="0" max="30000" step="1" value="1000" id="pricecount">
+        <input class="filter__pricecount_min" type="number" min="0" placeholder="0">
+        <input class="filter__pricecount_max" type="number" max="30000" placeholder="30000">
       </section>
     </section>
 
@@ -91,7 +93,7 @@
               <input class="filter-manufacturers-form__input" type="checkbox" name="BOSCH" id="filter-bosch" checked>
               <label for="filter-bosch">Bosch</label>
             </li>
-            <li class="checkbox-list__itemn">
+            <li class="checkbox-list__item">
               <input class="filter-manufacturers-form__input" type="checkbox" name="interskol" id="filter-interskol">
               <label for="filter-interskol">Интерскол</label>
             </li>
@@ -112,11 +114,11 @@
         <fieldset>
           <legend class="filter-legend">Питание:</legend>
           <ul class="radio-list">
-            <li class="radio-list_item">
+            <li class="radio-list__item">
               <input class="filter-manufacturers-form__input" type="radio" name="supply-group" value="rechargeable" id="filter-recharge" checked>
               <label for="filter-recharge">Аккумуляторные</label>
             </li>
-            <li class="radio-list_item">
+            <li class="radio-list__item">
               <input class="filter-manufacturers-form__input" type="radio" name="supply-group" value="networked" id="filter-networked">
               <label for="filter-networked">Сетевые</label>
             </li>
@@ -382,8 +384,7 @@
       <a href="#">Оформить заказ</a>
       <button class="cart-order-place__continue" type="button" name="continue-buying">Продолжить покупки</button>
     </div>
-    <p><button class="cart-order-place__close" type="button">
-        <img src="img/svg/modal-cart-2.svg" alt="Закрыть информационное окно товара" width="21" height="21"> </button> </p>
+    <p><button class="cart__close" type="button"><img src="img/svg/modal-cart-2.svg" alt="Закрыть информационное окно товара" width="21" height="21"> </button> </p>
   </section>
 </body>
 
