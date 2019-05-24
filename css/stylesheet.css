@@ -260,7 +260,7 @@ ul {
   color: #32425c;
 }
 
-.breadcrumbs-list__item, {
+.breadcrumbs-list__item {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
