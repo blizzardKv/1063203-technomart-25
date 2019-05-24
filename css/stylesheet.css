@@ -55,64 +55,63 @@ ul {
   background-color: #ffffff;
 }
 
-.form-search__input:hover,
-.site-navigation__list_bookmarks:hover,
-.site-navigation__list_basket:hover {
+.site-navigation-list__item:not(:nth-child(4)):hover,
+.form-search__input:hover {
   background-color: #212a3a;
 }
 
-.form-search__input:active,
-.site-navigation__list_bookmarks:active,
-.site-navigation__list_basket:active {
+.site-navigation-list__item:nth-child(2):active,
+.site-navigation-list__item:nth-child(3):active {
+  color: #cacaca;
   background-color: #161d29;
 }
 
-.site-navigation__list_order {
+.site-navigation-list__item:nth-child(4) {
   background-color: #63a63e;
 }
 
-.site-navigation__list_order:hover {
+.site-navigation-list__item:nth-child(4):hover {
   background-color: #5fbb2d;
 }
 
-.site-navigation__list_order:active {
+.site-navigation-list__item:nth-child(4):active {
   background-color: #518534;
 }
 
-.main-headline {
+.main-header__headline {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
 
-.telephone-number {
+.main-header__telephone-number {
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
 }
 
-.telephone-address {
+.user-navigation-list__item {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
-.user-navigation__list_login a,
-.user-navigation__list_registration a {
+.uuser-navigation-list__item a,
+.user-navigation-list__item a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation__list_login a:hover,
-.user-navigation__list_registration a:hover {
+.user-navigation-list__item a:hover,
+.user-navigation-list__item a:hover {
   color: #ee3643;
 }
 
-.user-navigation__list_login a:active,
-.user-navigation__list_registration a:active {
+.user-navigation-list__item a:active,
+.user-navigation-list__item a:active {
   color: #cacaca;
 }
 
@@ -121,15 +120,15 @@ ul {
   background-color: #32425c;
 }
 
-.main-navigation__list_item:hover {
+.main-navigation-list__item:hover {
   background-color: #293449;
 }
 
-.main-navigation__list_item a:active {
+.main-navigation-list__item a:active {
   color: #9b9da2;
 }
 
-.main-navigation__list_item:active {
+.main-navigation-list__item:active {
   background-color: #1d2739;
 }
 
@@ -139,9 +138,9 @@ ul {
   text-transform: uppercase;
 }
 
-.second-headline_description {
+.about-technomart__description {
   font-size: 13px;
-  font-family: "PT-Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 }
 
@@ -151,67 +150,62 @@ ul {
   text-transform: uppercase;
 }
 
-.contacts-and-map__description {
-  font-size: 13px;
-  font-family: "PT-Sans", Arial, sans-serif;
-  line-height: 24px;
-}
-}
-
-.delivery-list__variants {
+.delivery-list__item {
   font-size: 18px;
   line-height: 20px;
 }
 
-.delivery-list__red-button,
-.contacts-and-map__red-button {
+.about-technomart__button,
+.contacts-and-map__button {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
 }
 
-.address {
+.main-footer__address {
   font-size: 18px;
   line-height: 24px;
-  color: #f3f7f9;
+  color: #f1f5f7;
 }
 
 .main-footer {
   background-color: #32425c;
 }
 
-.footer-part-bottom {
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.footer-navigation__list a {
+.footer-navigation-list__item a {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
 }
 
-.go-to-main-navigation__list a {
+.products-navigation-list__item a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
 }
 
-.footer-part-bottom__footer-copyright {
+.footer-part-bottom {
+  background-color: #293449;
+}
+
+.footer-part-bottom__footer-copyright,
+.footer-part-bottom__feedback,
+.footer-part-bottom__htmlacademy-copyright {
+  font-size: 16px;
   color: #ffffff;
 }
 
-.footer-part-bottom p {
+.footer-part-bottom__feedback a,
+.footer-part-bottom__htmlacademy-copyright a {
   font-size: 16px;
   color: #ffd180;
 }
 
 .footer-navigation__list a:hover,
-.go-to-main-navigation__list a:hover,
-.feedback a:hover,
-.htmlacademy-copyright a:hover {
+.products-navigation-list__item a:hover,
+.footer-part-bottom__feedback a:hover,
+.footer-part-bottom__htmlacademy-copyright a:hover {
   text-decoration: underline;
 }
 
@@ -220,54 +214,53 @@ ul {
   color: #7e8795;
 }
 
-.go-to-main-navigation__list a:active {
+.products-navigation-list__item a:active {
   text-decoration: none;
   color: #7d7266;
 }
 
-.feedback a:active,
-.htmlacademy-copyright a:active {
+.footer-part-bottom__feedback a:active,
+.footer-part-bottom__htmlacademy-copyright a:active {
   text-decoration: none;
   color: #ee3643;
 }
 
-.social-button {
+.footer-social a {
   background-color: #212a3a;
 }
 
-.social-button:hover,
-.social-button:active {
+.footer-social a:hover,
+.footer-social a:active {
   background-color: #ee3643;
 }
 
 /* CATALOG.HTML */
-.main-account-catalog__list a {
+.main-account-list__item a {
   font-size: 16px;
   text-decoration: underline;
   color: #9ea5af;
 }
 
-.main-account-catalog__list a:hover {
+.main-account-list__item a:hover {
   color: #ee3643;
 }
 
-.main-account-catalog__orders a:active,
-.main-account-catalog__to-cabinet a:active {
+.main-account-list__item a:active,
+.login a:active {
   color: #cacaca;
 }
 
-.main-account-catalog__login a {
+.login a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
-.main-account-catalog__login:hover {
+.login:hover {
   color: #32425c;
 }
 
-.breadcrumbs-list__item,
-.breadcrumbs-list__current {
+.breadcrumbs-list__item, {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -277,7 +270,7 @@ ul {
   color: #000000;
 }
 
-.main-headline-catalog {
+.container__title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -289,52 +282,52 @@ ul {
   border: none;
 }
 
-.filter-manufacturers-form__filter-radio-checkbox {
+.filter-manufacturers-form__checkbox-list,
+.filter-manufacturers-form__radio-list {
   font-size: 15px;
   line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
-.filter-legend {
+.fieldset__legend {
   line-height: 30px;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
-.catalog-list__item a {
+/* .text-block__link a {
   font-weight: bold;
   color: #000000;
-}
-
-.catalog-variants-list__item_type-and-mark,
-.catalog-variants-list__item_catalog-item-title {
+} */
+.text-block__text {
   font-size: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 20px;
-  text-align: center;
+  color: #000000;
 }
 
-.catalog-list__item_price s {
+.price__old s {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   color: #999999;
 }
 
-.actual-price {
+.price__actual {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
   background-color: #ee3643;
 }
 
-.catalog-variants-list__item_buy {
+.catalog-goods-list__buy-button {
   font-size: 14px;
   color: #ffffff;
   background-color: #63a63e;
 }
 
-.catalog-variants-list__item_to-bookmarks {
+.catalog-goods-list__bookmarks-button {
   font-size: 14px;
   color: #32425c;
   background-color: #ffffff;
