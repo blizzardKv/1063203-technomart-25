@@ -22,18 +22,18 @@ button {
 }
 
 body {
-  margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
-  line-height: 18px;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+  line-height: 18px;
+  margin: 0;
+  color: #000;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .visually-hidden {
@@ -78,7 +78,7 @@ a {
 }
 
 .form-search__input::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .form-search__input:hover {
@@ -131,8 +131,8 @@ a {
 }
 
 .main-header__headline {
-  font-style: italic;
   font-size: 16px;
+  font-style: italic;
   line-height: 23px;
   color: #ee3643;
 }
@@ -152,8 +152,8 @@ a {
 .user-navigation-list__link {
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
 .user-navigation-list__link:hover {
@@ -194,8 +194,8 @@ a {
 }
 
 .about-technomart__description {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 }
 
@@ -221,7 +221,7 @@ a {
 .contacts-and-map__button {
   font-size: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #ee3643;
 }
 
@@ -301,6 +301,153 @@ a {
   background-color: #ee3643;
 }
 
+/* Вторая часть задания  */
+/* Промо блок */
+.promo-navigation-list__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.promo__navigation-list__link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Бэкграунды промо */
+.promo-navigation-list__item:nth-child(1) {
+  background-color: #ffbf47;
+}
+
+.promo-navigation-list__item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.promo-navigation-list__item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.promo-navigation-list__item:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.promo-navigation-list__item:nth-child(5) {
+  background-color: #ffc047;
+}
+
+/* Бэкграунды линков */
+.promo__navigation-list__link:nth-child(1) {
+  background-color: #e5ac40;
+}
+
+.promo__navigation-list__link:nth-child(2) {
+  background-color: #35a9cc;
+}
+
+.promo__navigation-list__link:nth-child(3) {
+  background-color: #c682c2;
+}
+
+.promo__navigation-list__link:nth-child(4) {
+  background-color: #80c180;
+}
+
+.promo__navigation-list__link:nth-child(5) {
+  background-color: #e5ac40;
+}
+
+/* Слайдер-блок */
+.slider-slideshow__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: bold;
+  text-transform: uppercase;
+}
+
+.slider-slideshow__description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Популярные товары */
+.catalog-name__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-name__link {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.catalog-name {
+  background-color: #f9f5f0;
+}
+
+/* Популярные производители */
+.manufacturers-name__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.manufacturers-name__link {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.manufacturers-name {
+  background-color: #f9f5f0;
+}
+
+/* Сервисы */
+.service__title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+/* Сервисы-слайдер */
+.service-slide-list__button {
+  font-size: 21px;
+  line-height: 30px;
+  font-family: bold;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.service-slide-list__button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.service-slide-list__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.service-slide-list__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service-slide-list__button-send {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
 /* CATALOG.HTML */
 .main-account-list__link {
   font-size: 16px;
@@ -320,7 +467,7 @@ a {
 .login__link {
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
+  color: #000;
 }
 
 .login__link:hover {
@@ -332,6 +479,7 @@ a {
 }
 
 .breadcrumbs-list__item {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -356,9 +504,9 @@ a {
 
 .filter-manufacturers-form__checkbox-list,
 .filter-manufacturers-form__radio-list {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -375,7 +523,7 @@ a {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -388,6 +536,7 @@ a {
 }
 
 .text-block__text {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -401,7 +550,7 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
-  color: #999999;
+  color: #999;
 }
 
 .price__actual {
@@ -431,7 +580,7 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #32425c;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /* modal windows */
