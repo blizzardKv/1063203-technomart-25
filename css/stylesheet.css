@@ -97,7 +97,7 @@ ul {
   color: #32425c;
 }
 
-.uuser-navigation-list__item a,
+.user-navigation-list__item a,
 .user-navigation-list__item a {
   font-size: 21px;
   line-height: 21px;
@@ -297,10 +297,6 @@ ul {
   text-transform: uppercase;
 }
 
-/* .text-block__link a {
-  font-weight: bold;
-  color: #000000;
-} */
 .text-block__text {
   font-size: 18px;
   font-family: "PT Sans", Arial, sans-serif;
