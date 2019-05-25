@@ -65,7 +65,6 @@ ul {
 }
 
 .form-search__input:focus::placeholder {
-  color: #ffffff;
   opacity: 0;
 }
 
@@ -84,8 +83,7 @@ ul {
 .site-navigation-list__item:nth-child(2) a:active,
 .site-navigation-list__item:nth-child(3):active,
 .site-navigation-list__item:nth-child(3) a:active {
-  color: #ffffff;
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
   background-color: #161d29;
 }
 
@@ -98,16 +96,15 @@ ul {
   background-color: #5fbb2d;
 }
 
+.site-navigation-list__item:nth-child(4):active,
+.site-navigation-list__item:nth-child(4) a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+
 /* Класс для заполненной тележки */
 .cart-active {
   background-color: #ee3643;
-}
-
-.site-navigation-list__item:nth-child(4):active,
-.site-navigation-list__item:nth-child(4) a:active {
-  color: #ffffff;
-  opacity: 0.5;
-  background-color: #518534;
 }
 
 .main-header__headline {
@@ -141,8 +138,7 @@ ul {
 }
 
 .user-navigation-list__item a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation__list {
@@ -157,7 +153,7 @@ ul {
 }
 
 .main-navigation-list__item:active {
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
 
@@ -282,7 +278,7 @@ ul {
 }
 
 .login a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .login__link {
