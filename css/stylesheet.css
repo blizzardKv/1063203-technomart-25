@@ -29,8 +29,7 @@ ul {
   background-color: #f4f7f9;
 }
 
-.site-navigation,
-.form-search__input {
+.site-navigation {
   background-color: #293449;
 }
 
@@ -46,23 +45,47 @@ ul {
   background-color: #ba2732;
 }
 
+.site-navigation__list {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+/* Форма поиска */
+.form-search__input {
+  color: #ffffff;
+  background-color: transparent;
+}
+
 .form-search__input::placeholder {
   color: #ffffff;
 }
 
-.form-search__input:focus::placeholder {
-  color: transparent;
-  background-color: #ffffff;
-}
-
-.site-navigation-list__item:not(:nth-child(4)):hover,
 .form-search__input:hover {
   background-color: #212a3a;
 }
 
+.form-search__input:focus::placeholder {
+  color: #ffffff;
+  opacity: 0;
+}
+
+.form-search__input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*  */
+.site-navigation-list__item:not(:nth-child(4)):hover,
+.site-navigation-list__item:not(:nth-child(4)) a:hover {
+  background-color: #212a3a;
+}
+
 .site-navigation-list__item:nth-child(2):active,
-.site-navigation-list__item:nth-child(3):active {
-  color: #cacaca;
+.site-navigation-list__item:nth-child(2) a:active,
+.site-navigation-list__item:nth-child(3):active,
+.site-navigation-list__item:nth-child(3) a:active {
+  color: #ffffff;
+  opacity: 0.6;
   background-color: #161d29;
 }
 
@@ -70,11 +93,20 @@ ul {
   background-color: #63a63e;
 }
 
-.site-navigation-list__item:nth-child(4):hover {
+.site-navigation-list__item:nth-child(4):hover,
+.site-navigation-list__item:nth-child(4) a:hover {
   background-color: #5fbb2d;
 }
 
-.site-navigation-list__item:nth-child(4):active {
+/* Класс для заполненной тележки */
+.cart-active {
+  background-color: #ee3643;
+}
+
+.site-navigation-list__item:nth-child(4):active,
+.site-navigation-list__item:nth-child(4) a:active {
+  color: #ffffff;
+  opacity: 0.5;
   background-color: #518534;
 }
 
@@ -91,32 +123,32 @@ ul {
   color: #e9292a;
 }
 
-.user-navigation-list__item {
+.main-header__address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
-.user-navigation-list__item a,
-.user-navigation-list__item a {
+.user-navigation-list__link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation-list__item a:hover,
-.user-navigation-list__item a:hover {
+.user-navigation-list__link:hover {
   color: #ee3643;
 }
 
-.user-navigation-list__item a:active,
 .user-navigation-list__item a:active {
-  color: #cacaca;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .main-navigation__list {
+  font-size: 17px;
   line-height: 17px;
+  color: #000000;
   background-color: #32425c;
 }
 
@@ -124,11 +156,8 @@ ul {
   background-color: #293449;
 }
 
-.main-navigation-list__item a:active {
-  color: #9b9da2;
-}
-
 .main-navigation-list__item:active {
+  opacity: 0.5;
   background-color: #1d2739;
 }
 
@@ -193,12 +222,14 @@ ul {
 .footer-part-bottom__feedback,
 .footer-part-bottom__htmlacademy-copyright {
   font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
 }
 
 .footer-part-bottom__feedback a,
 .footer-part-bottom__htmlacademy-copyright a {
   font-size: 16px;
+  line-height: 18px;
   color: #ffd180;
 }
 
@@ -237,26 +268,30 @@ ul {
 /* CATALOG.HTML */
 .main-account-list__item a {
   font-size: 16px;
+  line-height: 18px;
   text-decoration: underline;
-  color: #9ea5af;
+  color: #32425c;
 }
 
 .main-account-list__item a:hover {
   color: #ee3643;
 }
 
-.main-account-list__item a:active,
-.login a:active {
+.main-account-list__item a:active {
   color: #cacaca;
 }
 
-.login a {
+.login a:active {
+  opacity: 0.3;
+}
+
+.login__link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
-.login:hover {
+.login__link:hover {
   color: #32425c;
 }
 
@@ -291,6 +326,7 @@ ul {
 }
 
 .fieldset__legend {
+  font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
@@ -299,18 +335,23 @@ ul {
 
 .text-block__text {
   font-size: 18px;
+  line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 20px;
   color: #000000;
 }
 
 .price__old s {
+  font-size: 17px;
+  line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   color: #999999;
 }
 
 .price__actual {
+  font-size: 17px;
+  line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
@@ -319,12 +360,14 @@ ul {
 
 .catalog-goods-list__buy-button {
   font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   background-color: #63a63e;
 }
 
 .catalog-goods-list__bookmarks-button {
   font-size: 14px;
+  line-height: 18px;
   color: #32425c;
   background-color: #ffffff;
 }
