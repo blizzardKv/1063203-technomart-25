@@ -210,7 +210,6 @@ a {
 
 .contacts-and-map__description {
   font-size: 13px;
-  font-family: "PT-Sans", Arial, sans-serif;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
 }
@@ -542,7 +541,13 @@ a {
 .text-block__text {
   font-size: 18px;
   line-height: 18px;
+  text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.text-block__text {
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
@@ -593,62 +598,4 @@ a {
 .popup-map,
 .cart {
   display: none;
-}
-
-/* Сетка */
-html, body {
-  min-width: 1200px;
-  min-height: 3250px;
-}
-
-.main-header {
-  margin-bottom: 42px;
-  /* временно */
-  min-height: 320px;
-}
-
-.main-logo {
-  display: flex;
-  width: 220px;
-  height: 42px;
-  margin: 0;
-  padding: 0;
-}
-
-.site-navigation-list {
-  display: flex;
-  width: 720px;
-  height: 42px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-header__headline {
-  width: 215px;
-  height: 45px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-header__telephone-number {
-  width: 270px;
-  height: 45px;
-  margin: 0;
-  padding: 0;
-}
-
-.user-navigation-list {
-  display: flex;
-  width: 280px;
-  height: 45px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation__list {
-  display: flex;
-  width: 940px;
-  height: 60px;
-  margin: 0;
-  padding: 0;
 }
