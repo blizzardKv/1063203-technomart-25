@@ -433,9 +433,15 @@ a {
 }
 
 /* Сервисы */
+.service {
+  background-color: #f4f8f9;
+}
+
 .service__title {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .service__text {
@@ -453,14 +459,26 @@ a {
   background-color: #32425c;
 }
 
+.service-slide-list__button:hover {
+  background-color: #293449;
+}
+
 .service-slide-list__button:active {
   color: #32425c;
   background-color: #ffffff;
 }
 
-.service-slide-list__title {
+.service-slide-list__title-1 {
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.service-slide-list__title-2 {
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #32425c;
 }
 
@@ -468,13 +486,15 @@ a {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
 }
 
 .service-slide-list__button-send {
-  color: #ffffff;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  background-color: #ee3643;
+  color: #ffffff;
+  background-color: #ff5357;
 }
 
 /* CATALOG.HTML */
@@ -634,7 +654,43 @@ a {
   color: rgba(50, 66, 92, 0.3)
 }
 
-/* modal windows */
+/* Вторая часть задания каталог */
+/* Фильтр */
+.name {
+  background-color: #f7f3ec;
+}
+
+.name__title {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+/* Ползунок с ценой*/
+.pricecount__title {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.pricecount__input {
+  background-color: #f7f3ec;
+}
+
+.pricecount__input[type="number"]:placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+/* Сортировка */
+/* всплывающие окна */
 .write-us,
 .popup-map,
 .cart {
