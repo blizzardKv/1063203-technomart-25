@@ -309,11 +309,14 @@ a {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
+  color: #ffffff;
 }
 
 .promo__navigation-list__link {
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* Бэкграунды промо */
@@ -338,71 +341,95 @@ a {
 }
 
 /* Бэкграунды линков */
-.promo__navigation-list__link:nth-child(1) {
-  background-color: #e5ac40;
+.promo-navigation-list__link {
+  background-color: rgba(229, 229, 299, 0.1);
 }
 
-.promo__navigation-list__link:nth-child(2) {
-  background-color: #35a9cc;
+.promo-navigation-list__link:hover {
+  background-color: rgba(204, 204, 204, 0.2);
 }
 
-.promo__navigation-list__link:nth-child(3) {
-  background-color: #c682c2;
-}
-
-.promo__navigation-list__link:nth-child(4) {
-  background-color: #80c180;
-}
-
-.promo__navigation-list__link:nth-child(5) {
-  background-color: #e5ac40;
+.promo-navigation-list__link:active {
+  background-color: rgba(178, 178, 178, 0.3);
 }
 
 /* Слайдер-блок */
 .slider-slideshow__title {
   font-size: 36px;
   line-height: 36px;
-  font-family: bold;
+  font-weight: bold;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .slider-slideshow__description {
   font-size: 18px;
   line-height: 24px;
+  color: #ffffff;
 }
 
-/* Популярные товары */
-.catalog-name__title {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.catalog-name__link {
+.slider-slideshow__link {
   font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: #ee3643;
 }
 
+.slider-slideshow__link:hover {
+  background-color: #ca2c37;
+}
+
+.slider-slideshow__link:active {
+  background-color: #ba2732;
+}
+
+/* Популярные товары */
 .catalog-name {
   background-color: #f9f5f0;
 }
 
-/* Популярные производители */
-.manufacturers-name__title {
+.catalog-name__title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  color: #32425c;
 }
 
-.manufacturers-name__link {
+.catalog-name__link {
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
 }
 
+.price__old-index {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+/* Популярные производители */
 .manufacturers-name {
   background-color: #f9f5f0;
+}
+
+.manufacturers-name__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.manufacturers-name__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
 }
 
 /* Сервисы */
@@ -421,7 +448,7 @@ a {
 .service-slide-list__button {
   font-size: 21px;
   line-height: 30px;
-  font-family: bold;
+  font-weight: bold;
   color: #ffffff;
   background-color: #32425c;
 }
@@ -585,12 +612,26 @@ a {
   background-color: #63a63e;
 }
 
+.catalog-goods-list__buy-button:hover {
+  background-color: #5fbb2d;
+}
+
+.catalog-goods-list__buy-button:active {
+  background-color: #518534;
+}
+
 .catalog-goods-list__bookmarks-button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #32425c;
   background-color: #ffffff;
+}
+
+.catalog-goods-list__bookmarks-button:hover {}
+
+.catalog-goods-list__bookmarks-button:active {
+  color: rgba(50, 66, 92, 0.3)
 }
 
 /* modal windows */
