@@ -12,6 +12,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 button {
@@ -33,10 +34,6 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
-}
-
-ul {
-  list-style: none;
 }
 
 .visually-hidden {
@@ -315,7 +312,7 @@ ul {
 }
 
 .main-account-list__link:active {
-  color: #cacaca;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .login__link {
@@ -372,18 +369,20 @@ ul {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.filter-manufacturers-form__button {
-  font-size: 13px;
-  line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-}
-
 .fieldset__legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.filter-manufacturers-form__button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
 }
 
 .text-block__text {
