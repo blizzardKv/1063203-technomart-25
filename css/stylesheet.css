@@ -48,6 +48,7 @@ ul {
 .site-navigation__list {
   font-size: 17px;
   line-height: 18px;
+  color: #ffffff;
 }
 
 /* Форма поиска */
@@ -74,16 +75,13 @@ ul {
 }
 
 /*  */
-.site-navigation-list__item:not(:nth-child(4)):hover,
-.site-navigation-list__item:not(:nth-child(4)) a:hover {
+.site-navigation-list__item:not(:nth-child(4)):hover {
   background-color: #212a3a;
 }
 
 .site-navigation-list__item:nth-child(2):active,
-.site-navigation-list__item:nth-child(2) a:active,
-.site-navigation-list__item:nth-child(3):active,
-.site-navigation-list__item:nth-child(3) a:active {
-  color: rgba(0, 0, 0, 0.6);
+.site-navigation-list__item:nth-child(3):active {
+  color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
 
@@ -91,15 +89,20 @@ ul {
   background-color: #63a63e;
 }
 
-.site-navigation-list__item:nth-child(4):hover,
-.site-navigation-list__item:nth-child(4) a:hover {
+.site-navigation-list__item:nth-child(4):hover {
   background-color: #5fbb2d;
 }
 
-.site-navigation-list__item:nth-child(4):active,
-.site-navigation-list__item:nth-child(4) a:active {
+.site-navigation-list__item:nth-child(4):active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
+}
+
+.site-navigation-list__link,
+.site-navigation-list__link:hover,
+.site-navigation-list__link:active {
+  color: inherit;
+  background-color: inherit;
 }
 
 /* Класс для заполненной тележки */
@@ -144,7 +147,7 @@ ul {
 .main-navigation__list {
   font-size: 17px;
   line-height: 17px;
-  color: #000000;
+  color: #ffffff;
   background-color: #32425c;
 }
 
@@ -155,6 +158,13 @@ ul {
 .main-navigation-list__item:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+}
+
+.main-navigation-list__link,
+.main-navigation-list__link:hover,
+.main-navigation-list__link:active {
+  color: inherit;
+  background-color: inherit;
 }
 
 .about-technomart__second-headline {
@@ -198,13 +208,13 @@ ul {
   background-color: #32425c;
 }
 
-.footer-navigation-list__item a {
+.footer-navigation-list__link {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
 }
 
-.products-navigation-list__item a {
+.products-navigation-list__link {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
@@ -222,63 +232,57 @@ ul {
   color: #ffffff;
 }
 
-.footer-part-bottom__feedback a,
-.footer-part-bottom__htmlacademy-copyright a {
+.footer-part-bottom__link {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
 }
 
-.footer-navigation__list a:hover,
-.products-navigation-list__item a:hover,
-.footer-part-bottom__feedback a:hover,
-.footer-part-bottom__htmlacademy-copyright a:hover {
+.footer-navigation__link:hover,
+.products-navigation-list__link:hover,
+.footer-part-bottom__link:hover {
   text-decoration: underline;
 }
 
-.footer-navigation__list a:active {
+.footer-navigation__link:active {
   text-decoration: none;
   color: #7e8795;
 }
 
-.products-navigation-list__item a:active {
+.products-navigation-list__link:active {
   text-decoration: none;
   color: #7d7266;
 }
 
-.footer-part-bottom__feedback a:active,
-.footer-part-bottom__htmlacademy-copyright a:active {
+.footer-part-bottom__link:active,
+.footer-part-bottom__link:active {
   text-decoration: none;
   color: #ee3643;
 }
 
-.footer-social a {
+.footer-social-list__social-button {
   background-color: #212a3a;
 }
 
-.footer-social a:hover,
-.footer-social a:active {
+.footer-social-list__social-button:hover,
+.footer-social-list__social-button:active {
   background-color: #ee3643;
 }
 
 /* CATALOG.HTML */
-.main-account-list__item a {
+.main-account-list__link {
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
   color: #32425c;
 }
 
-.main-account-list__item a:hover {
+.main-account-list__link:hover {
   color: #ee3643;
 }
 
-.main-account-list__item a:active {
+.main-account-list__link:active {
   color: #cacaca;
-}
-
-.login a:active {
-  color: rgba(0, 0, 0, 0.3)
 }
 
 .login__link {
@@ -288,7 +292,11 @@ ul {
 }
 
 .login__link:hover {
-  color: #32425c;
+  color: #000000;
+}
+
+.login__link:active {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .breadcrumbs-list__item {
@@ -297,7 +305,7 @@ ul {
   text-transform: uppercase;
 }
 
-.breadcrumbs-list a {
+.breadcrumbs-list__link {
   color: #000000;
 }
 
@@ -337,7 +345,7 @@ ul {
   color: #000000;
 }
 
-.price__old s {
+.price__old {
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
