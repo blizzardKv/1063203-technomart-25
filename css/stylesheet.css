@@ -270,14 +270,6 @@ a {
   line-height: 20px;
 }
 
-.about-technomart__button,
-.contacts-and-map__button {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
 .main-footer__address {
   font-size: 18px;
   line-height: 24px;
@@ -393,15 +385,18 @@ a {
 
 /* Бэкграунды линков */
 .promo-navigation-list__link {
-  background-color: rgba(229, 229, 299, 0.1);
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .promo-navigation-list__link:hover {
-  background-color: rgba(204, 204, 204, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-navigation-list__link:active {
-  background-color: rgba(178, 178, 178, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Слайдер-блок */
@@ -419,7 +414,7 @@ a {
   color: #ffffff;
 }
 
-.slider-slideshow__link {
+.red-button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -427,11 +422,11 @@ a {
   background-color: #ee3643;
 }
 
-.slider-slideshow__link:hover {
+.red-button:hover {
   background-color: #ca2c37;
 }
 
-.slider-slideshow__link:active {
+.red-button:active {
   background-color: #ba2732;
 }
 
@@ -445,14 +440,6 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
-}
-
-.catalog-name__link {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 .price__old-index {
@@ -474,14 +461,6 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
-}
-
-.manufacturers-name__link {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 /* Сервисы */
@@ -521,16 +500,9 @@ a {
   background-color: #ffffff;
 }
 
-.service-slide-list__title-1 {
+.service-slide-list__title {
   font-size: 36px;
   line-height: 36px;
-  text-transform: uppercase;
-  color: #32425c;
-}
-
-.service-slide-list__title-2 {
-  font-size: 36px;
-  line-height: 24px;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -540,14 +512,6 @@ a {
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
-}
-
-.service-slide-list__button-send {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ff5357;
 }
 
 /* CATALOG.HTML */
@@ -764,10 +728,8 @@ a {
 }
 
 .filter-sorting-list__link:hover {
-  text-decoration: underline;
-  text-decoration-color: #ee3643;
+  border-bottom: 1px solid #ee3643;
   color: #000000;
-  border-bottom: none;
 }
 
 .filter-sorting-list__link:active {
@@ -793,6 +755,10 @@ a {
 }
 
 /* Описание перфоратора */
+.perforator-description {
+  background-color: #f2f6f8;
+}
+
 .perforator-description__title {
   font-size: 30px;
   line-height: 30px;
