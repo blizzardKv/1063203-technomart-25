@@ -762,3 +762,162 @@ a {
 .cart {
   display: none;
 }
+
+/* Flexboxes */
+html,
+body {
+  /* Для удобства */
+  width: 1200px;
+  height: 3100px;
+}
+
+/* header */
+.main-header {
+  margin-bottom: 60px;
+  width: 1200px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+}
+
+.site-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 720px;
+}
+
+.main-logo {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+.center-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header__headline {
+  width: 205px;
+  margin-bottom: 45px;
+}
+
+.telephone-and-address {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 330px;
+}
+
+.main-header__telephone-number {
+  width: 270px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-header__address {
+  width: 270px;
+}
+
+.user-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 285px;
+}
+
+.user-navigation-list__item {
+  width: 125px;
+}
+
+.main-navigation {
+  width: 960px;
+  padding-bottom: 60px;
+}
+
+.main-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navigation-list__item {
+  width: 150px;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.about-technomart {
+  width: 680px;
+  margin-top: 82px;
+  margin-bottom: 86px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.contacts-and-map {
+  width: 440px;
+  margin-top: 82px;
+  margin-bottom: 86px;
+}
+
+/* footer */
+/* first row */
+.footer-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation-list {
+  display: flex;
+  width: 570px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* second row */
+.address-and-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer__address {
+  width: 345px;
+}
+
+.products-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}
+
+/* bottom */
+.footer-part-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
