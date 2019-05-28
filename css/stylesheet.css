@@ -67,6 +67,10 @@ a {
   background-color: #ee3643;
 }
 
+.main-logo__image {
+  width: 220px;
+}
+
 .main-logo:hover {
   background-color: #ca2c37;
 }
@@ -241,6 +245,13 @@ a {
   background-color: inherit;
 }
 
+.about {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 86px;
+}
+
 .about-technomart__second-headline {
   font-size: 30px;
   line-height: 30px;
@@ -251,6 +262,10 @@ a {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
+}
+
+.contacts-and-map {
+  width: 440px;
 }
 
 .contacts-and-map__headline {
@@ -270,6 +285,12 @@ a {
   line-height: 20px;
 }
 
+.address-and-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer__address {
   font-size: 18px;
   line-height: 24px;
@@ -277,7 +298,17 @@ a {
 }
 
 .main-footer {
+  margin: 0;
+  padding: 0;
   background-color: #32425c;
+}
+
+.footer-navigation {
+  display: flex;
+}
+
+.footer-navigation-list {
+  width: 570px;
 }
 
 .footer-navigation-list__link {
@@ -293,6 +324,10 @@ a {
 .footer-navigation-list__link:active {
   text-decoration: none;
   color: rgba(241, 245, 247, 0.5);
+}
+
+.products-navigation-list {
+  width: 550px;
 }
 
 .products-navigation-list__link {
@@ -311,6 +346,10 @@ a {
 }
 
 .footer-part-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   background-color: #293449;
 }
 
@@ -782,58 +821,4 @@ a {
 .popup-map,
 .cart {
   display: none;
-}
-
-/* about */
-.about {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 86px;
-}
-
-.about-technomart {
-  width: 680px;
-}
-
-.contacts-and-map {
-  width: 440px;
-}
-
-/* footer */
-/* first row */
-.main-footer {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-navigation {
-  display: flex;
-}
-
-.footer-navigation-list {
-  width: 570px;
-}
-
-/* second row */
-.address-and-navigation {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.main-footer__address {
-  width: 345px;
-}
-
-.products-navigation-list {
-  width: 550px;
-}
-
-/* bottom */
-.footer-part-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
