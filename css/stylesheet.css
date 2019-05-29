@@ -29,7 +29,6 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
-  width: 1200px;
 }
 
 a {
@@ -46,23 +45,25 @@ a {
 }
 
 .main-header {
-  width: 1200px;
-  margin-bottom: 46px;
   background-color: #f4f7f9;
+  outline: 5px solid red;
 }
 
 .site-navigation {
-  display: flex;
-  margin: 0;
-  padding: 0;
   background-color: #293449;
+  outline: 5px solid yellow;
+}
+
+.site-navigation__wrapper {
+  display: flex;
+  width: 940px;
+  outline: 5px solid orange;
 }
 
 .main-logo {
-  margin: 0;
-  padding: 0;
   width: 220px;
   background-color: #ee3643;
+  outline: 5px solid green;
 }
 
 .main-logo:hover {
@@ -74,9 +75,11 @@ a {
 }
 
 .site-navigation__list {
+  /* display: flex; */
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  outline: 5px solid blue;
 }
 
 /* Форма поиска */
@@ -107,8 +110,8 @@ a {
 }
 
 /*  */
-.site-navigation-list {
-  width: 730px;
+.site-navigation-list__item {
+  outline: 5px solid grey;
 }
 
 .site-navigation-list__item:not(:nth-child(4)):hover {
@@ -148,9 +151,11 @@ a {
 
 .center-block {
   display: flex;
+  width: 940px;
   margin: 0;
   padding: 0;
   margin-bottom: 46px;
+  outline: 5px solid violet;
 }
 
 .main-header__headline {
@@ -158,7 +163,6 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  width: 205px;
 }
 
 .telephone-and-address {
@@ -182,10 +186,6 @@ a {
   width: 285px;
 }
 
-.user-navigation-list__item {
-  width: 125px;
-}
-
 .user-navigation-list__link {
   font-size: 21px;
   line-height: 21px;
@@ -201,15 +201,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation {
-  width: 940px;
-  padding-bottom: 60px;
-}
-
 .main-navigation-list {
-  display: flex;
+  width: 940px;
   margin: 0;
   padding: 0;
+  outline: 5px solid black;
 }
 
 .main-navigation-list__item {
@@ -246,6 +242,10 @@ a {
   padding-bottom: 86px;
 }
 
+.about-technomart {
+  padding-left: 130px;
+}
+
 .about-technomart__second-headline {
   font-size: 30px;
   line-height: 30px;
@@ -260,6 +260,7 @@ a {
 
 .contacts-and-map {
   width: 440px;
+  padding-left: 120px;
 }
 
 .contacts-and-map__headline {
@@ -281,8 +282,8 @@ a {
 
 .address-and-navigation {
   display: flex;
-  margin: 0;
-  padding: 0;
+  width: 940px;
+  outline: 5px solid #ffc047;
 }
 
 .main-footer__address {
@@ -292,18 +293,17 @@ a {
 }
 
 .main-footer {
-  margin: 0;
-  padding: 0;
   background-color: #32425c;
 }
 
 .footer-navigation {
   display: flex;
   width: 940px;
+  outline: 5px solid white;
 }
 
 .footer-navigation-list {
-  display: flex;
+  /* display: flex; */
   width: 570px;
   margin-bottom: 50px;
 }
@@ -345,18 +345,32 @@ a {
 
 .footer-part-bottom {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
   background-color: #293449;
+  padding: 0 130px;
+  outline: 5px solid red;
 }
 
-.footer-part-bottom__footer-copyright,
-.footer-part-bottom__feedback,
+.footer-part-bottom__footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  outline: 5px solid yellow;
+}
+
+.footer-part-bottom__feedback {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  outline: 5px solid orange;
+  padding-left: 118px;
+}
+
 .footer-part-bottom__htmlacademy-copyright {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  padding-left: 50px;
+  outline: 5px solid blue;
 }
 
 .footer-part-bottom__link {
@@ -376,6 +390,16 @@ a {
 
 .footer-social-list__social-button {
   background-color: #212a3a;
+  outline: 5px solid black;
+}
+
+.footer-social {
+  outline: 5px solid black;
+  padding-left: 160px;
+}
+
+.footer-social-list {
+  display: flex;
 }
 
 .footer-social-list__social-button:hover,
