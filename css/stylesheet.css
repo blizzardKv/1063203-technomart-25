@@ -125,13 +125,16 @@ a {
   background-color: #212a3a;
 }
 
-.form-search__input:focus::placeholder {
-  opacity: 0;
+.form-search {
+  color: inherit;
+  border: 0;
 }
 
-.form-search__input:focus {
-  color: #000000;
-  background-color: #ffffff;
+.main-logo {
+  padding-top: 13px;
+  padding-right: 57px;
+  padding-bottom: 15px;
+  padding-left: 56px;
 }
 
 /*  */
@@ -226,7 +229,8 @@ a {
   background-color: #ee3643;
 }
 
-.center-block {
+.center-wrapper {
+  width: 940px;
   display: flex;
   justify-content: space-between;
   width: 940px;
@@ -247,6 +251,8 @@ a {
 
 .telephone-and-address {
   width: 270px;
+  min-height: 52px;
+  background-color: orange;
 }
 
 .main-header__telephone-number {
