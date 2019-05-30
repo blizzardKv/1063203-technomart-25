@@ -14,13 +14,11 @@
     <nav class="main-header__site-bar site-navigation">
       <div class="site-navigation__wrapper">
         <p class="site-navigation__logo main-logo"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
+        <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
+          <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
+        </form>
         <ul class="site-navigation__list site-navigation-list">
-          <li class="site-navigation-list__item">
-            <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
-              <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
-              <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
-            </form>
-          </li>
           <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Закладки</a></li>
           <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Корзина</a></li>
           <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Оформить заказ</a></li>
@@ -250,73 +248,78 @@
     </section>
 
     <section class="container__about about">
-      <div class="about__technomart about-technomart">
+      <div class="about__wrapper about-wrapper">
+        <div class="about__technomart about-technomart">
 
-        <h2 class="about-technomart__second-headline">Компания «Техномарт»</h2>
-        <p class="about-technomart__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p class="about-technomart__description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>
+          <h2 class="about-technomart__second-headline">Компания «Техномарт»</h2>
+          <p class="about-technomart__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p class="about-technomart__description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>
 
-        <ul class="about-technomart__delivery-list delivery-list">
-          <li class="delivery-list__item">Деловые линии</li>
-          <li class="delivery-list__item">Автотрейдинг</li>
-          <li class="delivery-list__item">ЖелДорЭкспедиция</li>
-        </ul>
+          <ul class="about-technomart__delivery-list delivery-list">
+            <li class="delivery-list__item">Деловые линии</li>
+            <li class="delivery-list__item">Автотрейдинг</li>
+            <li class="delivery-list__item">ЖелДорЭкспедиция</li>
+          </ul>
 
-        <button class="about-technomart__button red-button" type="button">Подробнее о компании</button>
+          <button class="about-technomart__button red-button" type="button">Подробнее о компании</button>
 
-      </div>
+        </div>
 
-      <div class="about__contacts-and-map contacts-and-map">
-        <h2 class="contacts-and-map__headline">Контакты</h2>
+        <div class="about__contacts-and-map contacts-and-map">
+          <h2 class="contacts-and-map__headline">Контакты</h2>
 
-        <p class="contacts-and-map__description">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+          <p class="contacts-and-map__description">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
 
-        <img class="contacts-and-map__image" src="img/map.jpg" alt="Расположение офиса" width="300" height="158">
+          <img class="contacts-and-map__image" src="img/map.jpg" alt="Расположение офиса" width="300" height="158">
 
-        <button class="contacts-and-map__button red-button" type="button">Заблудились? Напишите нам!</button>
+          <button class="contacts-and-map__button red-button" type="button">Заблудились? Напишите нам!</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-
-    <nav class="main-footer__footer-navigation footer-navigation">
-      <p class="footer-navigation__logo main-logo"><a class="main-logo__link" href="index.html"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></a></p>
-      <ul class="footer-navigation__list footer-navigation-list">
-        <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Компания</a></li>
-        <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Новости</a></li>
-        <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Каталог</a></li>
-        <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Доставка</a></li>
-        <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="main-footer__address-and-navigation address-and-navigation">
-      <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
-
-      <nav class="main-footer__products-navigation products-navigation">
-        <ul class="products-navigation__list products-navigation-list">
-          <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Материалы</a></li>
-          <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Техника</a></li>
-          <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Инструмент</a></li>
-          <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Спецпредложения</a></li>
+    <div class="main-footer__wrapper main-footer-wrapper">
+      <nav class="main-footer__footer-navigation footer-navigation">
+        <p class="footer-navigation__logo main-logo"><a class="main-logo__link" href="index.html"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></a></p>
+        <ul class="footer-navigation__list footer-navigation-list">
+          <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Компания</a></li>
+          <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Новости</a></li>
+          <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Каталог</a></li>
+          <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Доставка</a></li>
+          <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="#">Контакты</a></li>
         </ul>
       </nav>
+      <div class="main-footer__address-and-navigation address-and-navigation">
+        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
+
+        <nav class="main-footer__products-navigation products-navigation">
+          <ul class="products-navigation__list products-navigation-list">
+            <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Материалы</a></li>
+            <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Техника</a></li>
+            <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Инструмент</a></li>
+            <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="main-footer__footer-part-bottom footer-part-bottom">
-      <p class="footer-part-bottom__footer-copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+      <div class="footer-part-bottom__wrapper">
+        <p class="footer-part-bottom__footer-copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
 
-      <div class="footer-part-bottom__footer-social footer-social">
-        <ul class="footer-social__list footer-social-list">
-          <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Vk</a></li>
-          <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Facebook</a></li>
-          <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Instagram</a></li>
-        </ul>
+        <div class="footer-part-bottom__footer-social footer-social">
+          <ul class="footer-social__list footer-social-list">
+            <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Vk</a></li>
+            <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Facebook</a></li>
+            <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+        <p class="footer-part-bottom__feedback">Обратная связь:<br><a class="footer-part-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+
+        <p class="footer-part-bottom__htmlacademy-copyright">Разработано —<br><a class="footer-part-bottom__link" href="http://htmlacademy.ru">htmlacademy.ru</a></p>
       </div>
-
-      <p class="footer-part-bottom__feedback">Обратная связь:<br><a class="footer-part-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-
-      <p class="footer-part-bottom__htmlacademy-copyright">Разработано —<br><a class="footer-part-bottom__link" href="http://htmlacademy.ru">htmlacademy.ru</a></p>
     </div>
   </footer>
 
