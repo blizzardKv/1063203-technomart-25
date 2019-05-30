@@ -46,24 +46,21 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
-  outline: 5px solid red;
 }
 
 .site-navigation {
   background-color: #293449;
-  outline: 5px solid yellow;
 }
 
 .site-navigation__wrapper {
   display: flex;
-  width: 940px;
-  outline: 5px solid orange;
+  justify-content: space-between;
+  max-width: 940px;
 }
 
 .main-logo {
   width: 220px;
   background-color: #ee3643;
-  outline: 5px solid green;
 }
 
 .main-logo:hover {
@@ -75,11 +72,10 @@ a {
 }
 
 .site-navigation__list {
-  /* display: flex; */
+  display: flex;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  outline: 5px solid blue;
 }
 
 /* Форма поиска */
@@ -110,9 +106,7 @@ a {
 }
 
 /*  */
-.site-navigation-list__item {
-  outline: 5px solid grey;
-}
+.site-navigation-list__item {}
 
 .site-navigation-list__item:not(:nth-child(4)):hover {
   background-color: #212a3a;
@@ -152,10 +146,8 @@ a {
 .center-block {
   display: flex;
   width: 940px;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
   margin-bottom: 46px;
-  outline: 5px solid violet;
 }
 
 .main-header__headline {
@@ -205,7 +197,6 @@ a {
   width: 940px;
   margin: 0;
   padding: 0;
-  outline: 5px solid black;
 }
 
 .main-navigation-list__item {
@@ -283,7 +274,6 @@ a {
 .address-and-navigation {
   display: flex;
   width: 940px;
-  outline: 5px solid #ffc047;
 }
 
 .main-footer__address {
@@ -299,7 +289,6 @@ a {
 .footer-navigation {
   display: flex;
   width: 940px;
-  outline: 5px solid white;
 }
 
 .footer-navigation-list {
@@ -347,22 +336,18 @@ a {
   display: flex;
   background-color: #293449;
   padding: 0 130px;
-  outline: 5px solid red;
 }
 
 .footer-part-bottom__footer-copyright {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  outline: 5px solid yellow;
 }
 
 .footer-part-bottom__feedback {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  outline: 5px solid orange;
-  padding-left: 118px;
 }
 
 .footer-part-bottom__htmlacademy-copyright {
@@ -370,7 +355,6 @@ a {
   line-height: 18px;
   color: #ffffff;
   padding-left: 50px;
-  outline: 5px solid blue;
 }
 
 .footer-part-bottom__link {
@@ -390,16 +374,14 @@ a {
 
 .footer-social-list__social-button {
   background-color: #212a3a;
-  outline: 5px solid black;
 }
 
 .footer-social {
-  outline: 5px solid black;
   padding-left: 160px;
 }
 
 .footer-social-list {
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-social-list__social-button:hover,
