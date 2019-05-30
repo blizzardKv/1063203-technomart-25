@@ -11,22 +11,26 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-header__site-bar site-navigation">
-      <p class="site-navigation__logo main-logo"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
-      <ul class="site-navigation__list site-navigation-list">
-        <li class="site-navigation-list__item">
-          <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
-            <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
-          </form>
-        </li>
-        <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Закладки</a></li>
-        <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Корзина</a></li>
-        <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Оформить заказ</a></li>
-      </ul>
-    </nav>
+    <div class="main-header__wrapper">
+      <nav class="main-header__site-bar site-navigation">
+        <p class="site-navigation__logo main-logo"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
+        <div class="site-nav-wrap">
+          <ul class="site-navigation__list site-navigation-list">
+            <li class="site-navigation-list__item">
+              <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
+                <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
+                <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
+              </form>
+            </li>
+            <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Закладки</a></li>
+            <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Корзина</a></li>
+            <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    <div class="main-header__center-block center-block">
+    <div class="main-header__center-wrapper center-wrapper">
       <h1 class="main-header__headline">Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта</h1>
