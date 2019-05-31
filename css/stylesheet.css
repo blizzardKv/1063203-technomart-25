@@ -643,10 +643,59 @@ a {
 
 /* Вторая часть задания  */
 /* Промо блок */
-.promo {
+.wrappp {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+}
+
+.promo-navigation-list__item-1 {
+  grid-area: header-1;
+  background-color: #ffbf47;
+  width: 300px;
+}
+
+.promo-navigation-list__item-2 {
+  grid-area: header-2;
+  background-color: #3bbce3;
+  width: 300px;
+}
+
+.promo-navigation-list__item-3 {
+  grid-area: header-3;
+  background-color: #dc91d8;
+  width: 300px;
+}
+
+.promo-navigation-list__item-4 {
+  grid-area: header-4;
+  background-color: #8ed78f;
+  width: 300px;
+}
+
+.promo-navigation-list__item-5 {
+  grid-area: header-5;
+  background-color: #ffc047;
+  width: 300px;
+}
+
+.promo-navigation-list__item-6 {
+  grid-area: slider;
+}
+
+.promo-navigation-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-rows: 123px 123px 123px;
+  grid-template-areas:
+    "header-1 header-2 header-3"
+    "slider slider header-4"
+    "slider slider header-5";
+  justify-content: space-around;
+  background-color: #32425c;
+  outline: 2px solid black;
 }
 
 .promo-navigation-list__title {
@@ -661,6 +710,11 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.promo-navigation-list__item {
+  width: 300px;
+  padding: 0 10px;
 }
 
 /* Бэкграунды промо */

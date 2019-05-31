@@ -58,33 +58,43 @@
   </header>
 
   <main class="container">
-    <section class="container__promo promo">
-      <h2 class="visually-hidden">Промо материалов</h2>
-      <nav class="promo__navigation promo-navigation">
-        <ul class="promo-navigation__list promo-navigation-list">
-          <li class="promo-navigation-list__item">
-            <h3 class="promo-navigation-list__title">Материалы</h3>
-            <a class="promo-navigation-list__link" href="#">На любой вкус</a>
-          </li>
-          <li class="promo-navigation-list__item">
-            <h3 class="promo-navigation-list__title">Инструмент</h3>
-            <a class="promo-navigation-list__link" href="#">На все случаи</a>
-          </li>
-          <li class="promo-navigation-list__item">
-            <h3 class="promo-navigation-list__title">Техника</h3>
-            <a class="promo-navigation-list__link" href="#">Для стройки</a>
-          </li>
-          <li class="promo-navigation-list__item">
-            <h3 class="promo-navigation-list__title">Скидки 50%</h3>
-            <a class="promo-navigation-list__link" href="#">На 350 товаров</a>
-          </li>
-          <li class="promo-navigation-list__item">
-            <h3 class="promo-navigation-list__title">Доставка</h3>
-            <a class="promo-navigation-list__link" href="#">Бесплатно</a>
-          </li>
-        </ul>
-        <input class="visually-hidden" type="radio" id="position-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="position-2" name="toggle">
+    <div class="wrappp">
+      <section class="container__promo promo">
+        <div class="prmo__wrapper promo-wrapper">
+          <h2 class="visually-hidden">Промо материалов</h2>
+          <nav class="promo__navigation promo-navigation">
+            <ul class="promo-navigation__list promo-navigation-list">
+              <li class="promo-navigation-list__item-1">
+                <h3 class="promo-navigation-list__title">Материалы</h3>
+                <a class="promo-navigation-list__link" href="#">На любой вкус</a>
+              </li>
+              <li class="promo-navigation-list__item-2">
+                <h3 class="promo-navigation-list__title">Инструмент</h3>
+                <a class="promo-navigation-list__link" href="#">На все случаи</a>
+              </li>
+              <li class="promo-navigation-list__item-3">
+                <h3 class="promo-navigation-list__title">Техника</h3>
+                <a class="promo-navigation-list__link" href="#">Для стройки</a>
+              </li>
+              <li class="promo-navigation-list__item-4">
+                <h3 class="promo-navigation-list__title">Скидки 50%</h3>
+                <a class="promo-navigation-list__link" href="#">На 350 товаров</a>
+              </li>
+              <li class="promo-navigation-list__item-5">
+                <h3 class="promo-navigation-list__title">Доставка</h3>
+                <a class="promo-navigation-list__link" href="#">Бесплатно</a>
+              </li>
+              <li class="promo-navigation-list__item-6">
+                <div class="slider slider-slideshow">
+                  <h3 class="slider-slideshow__title">Дрели</h3>
+                  <p class="slider-slideshow__description">Cоседям на радость</p>
+                  <img class="slider-slideshow__image" src="img/slider-1.jpg" alt="Картинка дрели и брутального мужика" width="620" height="266">
+                  <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="promo__slider slider">
           <div class="promo-container">
             <h2 class="visually-hidden">Блоки слайдера</h2>
@@ -112,8 +122,9 @@
               <section>
           </div>
         </div>
-      </nav>
-    </section>
+      </section>
+    </div>
+
     <section class="container__catalog catalog">
       <div class="catalog__name catalog-name">
         <h2 class="catalog-name__title">Популярные товары:</h2>
