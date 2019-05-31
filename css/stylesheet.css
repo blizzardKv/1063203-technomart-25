@@ -244,10 +244,9 @@ a {
 }
 
 .about {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 86px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .about-wrapper {
@@ -419,6 +418,12 @@ a {
 
 /* Вторая часть задания  */
 /* Промо блок */
+.promo {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .promo-navigation-list__title {
   font-size: 24px;
   line-height: 30px;
@@ -504,6 +509,12 @@ a {
 }
 
 /* Популярные товары */
+.catalog {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .catalog-name {
   background-color: #f9f5f0;
 }
@@ -525,6 +536,12 @@ a {
 }
 
 /* Популярные производители */
+.manufacturers {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .manufacturers-name {
   background-color: #f9f5f0;
 }
@@ -539,6 +556,12 @@ a {
 /* Сервисы */
 .service {
   background-color: #f4f8f9;
+}
+
+.service-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .service__title {
@@ -628,6 +651,7 @@ a {
   width: 940px;
   margin: 0 auto;
   padding-left: 10px;
+  margin-bottom: 25px;
 }
 
 .breadcrumbs-list__item {
@@ -837,7 +861,17 @@ a {
 }
 
 /* Сортировка */
+.filter {
+  width: 200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-bottom: 25px;
+}
+
 .filter-sorting {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
   background-color: #f7f3ec;
 }
 
