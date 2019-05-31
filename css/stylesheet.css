@@ -310,6 +310,28 @@ a {
   padding: 0 10px;
 }
 
+.footer-logo {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  background-color: #ee3643;
+}
+
+.footer-logo__image {
+  padding-top: 21px;
+  padding-right: 42px;
+  padding-bottom: 21px;
+  padding-left: 42px;
+}
+
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.footer-logo:active {
+  background-color: #ba2732;
+}
+
 .footer-navigation-list__link {
   font-size: 18px;
   line-height: 24px;
