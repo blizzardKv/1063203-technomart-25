@@ -563,7 +563,6 @@ a {
   margin: 0 auto;
   padding: 0 10px;
 }
-}
 
 .service__title {
   font-size: 30px;
@@ -863,7 +862,7 @@ a {
 
 /* Сортировка */
 .filter {
-  width: 940px;
+  width: 200px;
   margin: 0 auto;
   padding: 0 10px;
   padding-bottom: 25px;
