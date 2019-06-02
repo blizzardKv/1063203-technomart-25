@@ -50,6 +50,8 @@ a {
 }
 
 .site-navigation {
+  margin: 0px;
+  padding: 0px;
   background-color: #293449;
   height: 42px;
 }
@@ -57,9 +59,10 @@ a {
 .site-navigation__wrapper {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .main-logo {
@@ -67,13 +70,14 @@ a {
   padding: 0;
   width: 220px;
   background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 #b52933;
 }
 
 .main-logo__image {
   padding-top: 13px;
-  padding-right: 57px;
-  padding-bottom: 15px;
-  padding-left: 56px;
+  padding-right: 55px;
+  padding-bottom: 11px;
+  padding-left: 55px;
 }
 
 .main-logo:hover {
@@ -86,10 +90,10 @@ a {
 
 .site-navigation__list {
   display: flex;
+  flex-wrap: wrap;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  margin: 0px auto;
 }
 
 /* Форма поиска */
@@ -120,6 +124,20 @@ a {
 }
 
 /*  */
+.form-search {
+  padding: 13px 13px;
+  vertical-align: middle;
+  outline: 0;
+}
+
+.site-navigation-list__item {
+  display: block;
+  width: 150px;
+  padding: 12px 12px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
 .site-navigation-list__item:not(:nth-child(3)):hover {
   background-color: #212a3a;
 }
@@ -146,9 +164,60 @@ a {
 .site-navigation-list__link,
 .site-navigation-list__link:hover,
 .site-navigation-list__link:active {
-  margin: 10px;
   color: inherit;
   background-color: inherit;
+}
+
+.site-navigation-list__item:nth-child(1) a,
+.site-navigation-list__item:nth-child(1) a:hover,
+.site-navigation-list__item:nth-child(1) a:active {
+  padding-left: 25px;
+  position: relative;
+  /* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
+}
+
+.site-navigation-list__item:nth-child(2) a,
+.site-navigation-list__item:nth-child(2) a:hover,
+.site-navigation-list__item:nth-child(2) a:active {
+  padding-left: 30px;
+  position: relative;
+  /* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
+}
+
+.site-navigation-list__item:nth-child(1) a::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  left: -2px;
+  background-image: url("../img/svg/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.site-navigation-list__item:nth-child(2) a::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -1px;
+  background-image: url("../img/svg/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.site-navigation-list__item:nth-child(1) a:hover::before,
+.site-navigation-list__item:nth-child(2) a:hover::before {
+  opacity: 1;
+}
+
+.site-navigation-list__item:nth-child(1) a:active::before,
+.site-navigation-list__item:nth-child(2) a:active::before {
+  opacity: 0.5;
 }
 
 /* Класс для заполненной тележки */
@@ -157,10 +226,13 @@ a {
 }
 
 .center-block {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   margin-bottom: 46px;
+  padding-top: 46px;
 }
 
 .main-header__headline {
@@ -172,6 +244,7 @@ a {
 
 .telephone-and-address {
   width: 270px;
+  background-color: green;
 }
 
 .main-header__telephone-number {
@@ -188,7 +261,16 @@ a {
 }
 
 .user-navigation {
-  width: 285px;
+  width: 281px;
+}
+
+.user-navigation-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation-list a {
+  display: block;
 }
 
 .user-navigation-list__link {
@@ -200,6 +282,36 @@ a {
 
 .user-navigation-list__link:hover {
   color: #ee3643;
+}
+
+.user-navigation-list__item a {
+  padding-top: 13px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+}
+
+.user-navigation-list__item:nth-child(1) a {
+  width: 121px;
+  padding-right: 27px;
+  padding-left: 48px;
+  position: relative;
+}
+
+.user-navigation-list__item:nth-child(1) a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  left: 14px;
+  background-image: url("../img/svg/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-navigation-list__item:nth-child(1) a:hover::before {
+  opacity: 1;
 }
 
 .user-navigation-list__item a:active {
