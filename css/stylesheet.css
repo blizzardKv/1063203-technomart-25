@@ -97,13 +97,26 @@ a {
 }
 
 /* Форма поиска */
+.form-search {
+  margin: 0px;
+  padding: 0px;
+}
+
 .form-search__input {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.1);
   background-color: transparent;
+  width: 270px;
+  position: relative;
+  border: 0 none;
+  padding: 12px 13px 12px 18px;
 }
 
 .form-search__input::placeholder {
   color: #ffffff;
+  background-image: url("../img/svg/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .form-search__input:hover {
@@ -124,12 +137,6 @@ a {
 }
 
 /*  */
-.form-search {
-  padding: 13px 13px;
-  vertical-align: middle;
-  outline: 0;
-}
-
 .site-navigation-list__item {
   display: block;
   width: 150px;
@@ -173,8 +180,6 @@ a {
 .site-navigation-list__item:nth-child(1) a:active {
   padding-left: 25px;
   position: relative;
-  /* background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 }
 
 .site-navigation-list__item:nth-child(2) a,
@@ -182,8 +187,6 @@ a {
 .site-navigation-list__item:nth-child(2) a:active {
   padding-left: 30px;
   position: relative;
-  /* background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 }
 
 .site-navigation-list__item:nth-child(1) a::before {
@@ -230,9 +233,9 @@ a {
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
-  padding: 0;
-  margin-bottom: 46px;
-  padding-top: 46px;
+  padding-top: 26px;
+  padding-left: 55px;
+  margin-bottom: 31px;
 }
 
 .main-header__headline {
@@ -240,24 +243,43 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  padding-top: 12px;
+  text-align: left;
 }
 
 .telephone-and-address {
   width: 270px;
-  background-color: green;
 }
 
 .main-header__telephone-number {
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
+  position: relative;
+  border: 2px solid #ffffff;
+  padding: 30px 10px 10px 30px;
+  text-align: center;
+  margin: 0px;
+}
+
+.main-header__telephone-number::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 12px;
+  background-image: url("../img/svg/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-header__address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  width: 270px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-left: 9px;
 }
 
 .user-navigation {
@@ -267,6 +289,7 @@ a {
 .user-navigation-list {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .user-navigation-list a {
@@ -304,6 +327,7 @@ a {
   width: 20px;
   height: 17px;
   left: 14px;
+  top: 14px;
   background-image: url("../img/svg/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -321,22 +345,25 @@ a {
 .main-navigation {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .main-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 940px;
-  margin: 0;
-  padding: 0;
 }
 
-.main-navigation-list__item {}
+.main-navigation-list__item {
+  padding: 22px 21px;
+}
 
 .main-navigation__list {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .main-navigation-list__item:hover {
@@ -358,18 +385,15 @@ a {
 .about {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .about-wrapper {
   display: flex;
   margin: 0 auto;
-  padding: 0 10px;
+  margin-bottom: 86px;
 }
 
-.about-technomart {
-  /* padding-left: 130px; */
-}
+.about-technomart {}
 
 .about-technomart__second-headline {
   font-size: 30px;
@@ -426,13 +450,11 @@ a {
   padding: 0;
   width: 220px;
   background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 #b52933;
 }
 
 .footer-logo__image {
-  padding-top: 21px;
-  padding-right: 42px;
-  padding-bottom: 21px;
-  padding-left: 42px;
+  padding: 21px 42px 21px;
 }
 
 .footer-logo:hover {
@@ -610,6 +632,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  padding: 14px 40px 14px 41px;
 }
 
 .red-button:hover {
