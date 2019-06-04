@@ -83,25 +83,33 @@
             <a class="promo-navigation-list__link" href="#">Бесплатно</a>
           </li>
         </ul>
+        <input class="visually-hidden" type="radio" id="position-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="position-2" name="toggle">
         <div class="promo__slider slider">
-          <h2 class="visually-hidden">Блоки слайдера</h2>
-          <div class="slider__button-left"><button class="slider__button-left arrow" type="button" aria-label="Кнопка переключения слайдера влево">left</button></div>
-          <div class="slider__button-right"><button class="slider__button-right arrow" type="button" aria-label="Кнопка переключения слайдера вправо">right</button></div>
-          <div class="slider slider-slideshow">
-            <h3 class="slider-slideshow__title">Дрели</h3>
-            <p class="slider-slideshow__description">Cоседям на радость</p>
-            <img class="slider-slideshow__image" src="img/slider-1.jpg" alt="Картинка дрели и брутального мужика" width="620" height="266">
-            <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slider slider-slideshow">
-            <h3 class="slider-slideshow__title">Перфораторы</h3>
-            <p class="slider-slideshow__description">Настоящие мужские игрушки</p>
-            <img class="slider-slideshow__image" src="img/slider-2.jpg" alt="Картинка перфоратора и другого брутального мужика" width="620" height="266">
-            <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slider__button-dot">
-            <button class="slider__button-dot dot" type="button" aria-label="Кнопка переключения слайдера">1</button>
-            <button class="slider__button-dot dot" type="button" aria-label="Кнопка переключения слайдера">2</button>
+          <div class="promo-container">
+            <h2 class="visually-hidden">Блоки слайдера</h2>
+            <section class="main-slider">
+              <div class="slider-controls">
+                <label for="position-1">Первый</label>
+                <label for="position-2">Второй</label>
+              </div>
+              <ul class="slider-slideshow">
+                <li class="slider-slideshow__slide" id="slide1">
+                  <h3 class="slider-slideshow__title">Дрели</h3>
+                  <p class="slider-slideshow__description">Cоседям на радость</p>
+                  <img class="slider-slideshow__left-arrow" src="img/svg/icon-left.svg" width="22px" height="40px">
+                  <img class="slider-slideshow__right-arrow" src="img/svg/icon-right.svg" width="22px" height="40px">
+                  <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
+                </li>
+                <li class="slider-slideshow__slide" id="slide2">
+                  <h3 class="slider-slideshow__title">Перфораторы</h3>
+                  <p class="slider-slideshow__description">Настоящие мужские игрушки</p>
+                  <img class="slider-slideshow__left-arrow" src="img/svg/icon-left.svg" width="22px" height="40px">
+                  <img class="slider-slideshow__right-arrow" src="img/svg/icon-right.svg" width="22px" height="40px">
+                  <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
+                </li>
+              </ul>
+              <section>
           </div>
         </div>
       </nav>
@@ -253,7 +261,7 @@
       <div class="about__wrapper about-wrapper">
         <div class="about__technomart about-technomart">
 
-          <h2 class="about-technomart__second-headline">Компания «Техномарт»</h2>
+          <h2 class="about-technomart__second-headline">КОМПАНИЯ «Техномарт»</h2>
           <p class="about-technomart__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p class="about-technomart__description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>

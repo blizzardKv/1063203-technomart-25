@@ -241,7 +241,7 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  padding-top: 12px;
+  margin: 0;
   text-align: left;
 }
 
@@ -287,7 +287,6 @@ a {
 .user-navigation-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
 .user-navigation-list a {
@@ -387,8 +386,10 @@ a {
 
 .about-wrapper {
   display: flex;
-  margin-bottom: 86px;
-  background-color: green;
+}
+
+.about-technomart {
+  flex-basis: 640px;
 }
 
 .about-technomart__second-headline {
@@ -403,14 +404,19 @@ a {
   line-height: 24px;
 }
 
+.about-technomart__description-second {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 24px;
+}
+
 .about-technomart__button {
   padding: 10px 40px 10px 40px;
   border-radius: 2px;
 }
 
 .contacts-and-map {
-  background-color: yellow;
-  text-align: right;
+  flex-basis: 300px;
 }
 
 .contacts-and-map__headline {
@@ -426,7 +432,9 @@ a {
 }
 
 .contacts-and-map__image {
-  margin-bottom: 104px;
+  height: auto;
+  padding-top: 19px;
+  margin-bottom: 37px;
 }
 
 .contacts-and-map__find-me-button {
@@ -458,6 +466,7 @@ a {
 .main-footer-wrapper {
   width: 940px;
   margin: 0 auto;
+  margin-top: 86px;
 }
 
 .footer-logo {
@@ -691,9 +700,43 @@ a {
 }
 
 /* Слайдер-блок */
+.promo__slider {
+  min-width: 620px;
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.promo__slider::before,
+.promo__slider::after {
+  content: "";
+  visibility: hidden;
+}
+
+.promo__slider::before {
+  background-image: url("../img/slider-1.jpg");
+}
+
+.promo__slider::after {
+  background-image: url("../img/slider-2.jpg");
+}
+
+.main-slider {
+  position: relative;
+}
+
+.promo-container {
+  width: 620px;
+  height: 265px;
+  padding: 0 25px;
+  margin: 0;
+}
+
 .slider-slideshow__title {
   font-size: 36px;
   line-height: 36px;
+  padding-top: 22px;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -703,6 +746,68 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  margin: 0px;
+  margin-bottom: 120px;
+}
+
+.slider-slideshow__link {
+  display: inline-block;
+  position: relative;
+  padding: 11px 45px 11px 49px;
+  border-radius: 2px;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 270px;
+  top: 218px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-slideshow__left-arrow {
+  position: absolute;
+  top: 113px;
+}
+
+.slider-slideshow__right-arrow {
+  position: absolute;
+  top: 113px;
+  right: -5px;
+}
+
+.slider-slideshow__slide {
+  display: none;
+}
+
+#position-1:checked~.slider #slide1,
+#position-2:checked~.slider #slide2 {
+  display: block;
+}
+
+#position-1:checked~.slider label[for="position-1"],
+#position-2:checked~.slider label[for="position-2"] {
+  background-color: red;
+}
+
+#position-1:checked~.slider {
+  background-image: url("../img/slider-1.jpg");
+}
+
+#position-2:checked~.slider {
+  background-image: url("../img/slider-2.jpg");
 }
 
 /* Кнопку "Отправить заявку" во вкладке "Кредит" стилизуем по аналогии с другими красными кнопками.
