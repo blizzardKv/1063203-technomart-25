@@ -226,8 +226,7 @@ a {
   background-color: #ee3643;
 }
 
-.center-wrapper {
-  width: 940px;
+.center-block {
   display: flex;
   justify-content: space-between;
   width: 940px;
