@@ -381,6 +381,7 @@ a {
 .about {
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 86px;
 }
 
 .about-wrapper {
@@ -465,7 +466,6 @@ a {
 .main-footer-wrapper {
   width: 940px;
   margin: 0 auto;
-  margin-top: 86px;
 }
 
 .footer-logo {
@@ -1187,7 +1187,7 @@ a {
   padding-top: 30px;
   padding-left: 27px;
   padding-bottom: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-manufacturers {
@@ -1245,6 +1245,7 @@ a {
 .image-block__image {
   width: 218px;
   height: 170px;
+  font-size: 0;
 }
 
 .text-block__text {
@@ -1280,8 +1281,8 @@ a {
   margin: 10px auto;
   margin-bottom: 20px;
   padding: 8px 28px;
-  color: white;
-  background: #ee3643;
+  color: #ffffff;
+  background-color: #ee3643;
   border-radius: 3px;
 }
 
@@ -1292,7 +1293,7 @@ a {
   right: -36px;
   width: 0;
   height: 0;
-  border: 19px solid white;
+  border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
 
@@ -1313,10 +1314,12 @@ a {
 
 .catalog-goods-list__item {
   width: 220px;
+  height: 320px;
   position: relative;
   display: inline-block;
   text-align: center;
   border: 1px solid #cccccc;
+  margin-bottom: 20px;
 }
 
 .flag-new {
@@ -1404,8 +1407,10 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
+  margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 /* Ползунок с ценой*/
@@ -1431,25 +1436,24 @@ a {
 }
 
 /* Сортировка */
-.filter {
-  width: 220px;
+.catalog-main-sorting {
+  display: flex;
+  width: 940px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .filter-and-sorting {
-  width: 940px;
-  margin: 0 auto;
+  width: 220px;
   display: flex;
-}
-
-.sorting-wrapper {
-  width: 700px;
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .filter-sorting {
   display: flex;
   width: 700px;
-  margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #f7f3ec;
 }
 
@@ -1459,6 +1463,8 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
+  padding-left: 20px;
+  padding-right: 140px;
 }
 
 .filter-sorting-list {
@@ -1466,12 +1472,15 @@ a {
 }
 
 .filter-sorting-list__link {
+  display: block;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   border-bottom: 1px dashed #ee3643;
   font-family: "PT Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  padding-right: 20px;
 }
 
 .filter-sorting-list__link:hover {
@@ -1487,31 +1496,50 @@ a {
 
 /* pagination */
 .pagination {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+  width: 285px;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+
+.pagination-list {
+  display: flex;
 }
 
 .pagination-list__link {
+  display: block;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
   color: #000000;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
 .pagination-list__link-current {
+  display: block;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.pagination-list__item:nth-child(4) a {
+  padding: 10px 28px 10px 28px;
 }
 
 /* Описание перфоратора */
 .perforator-description {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
   background-color: #f2f6f8;
 }
 
