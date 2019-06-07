@@ -233,7 +233,7 @@ a {
   margin: 0 auto;
   padding-top: 46px;
   padding-left: 55px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .main-header__headline {
@@ -957,6 +957,57 @@ a {
   color: #32425c;
 }
 
+.manufacturers-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.manufacturers-logo-list__link {
+  display: block;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+}
+
+.manufacturers-logo-list__item:nth-child(1) a {
+  padding: 48px;
+  margin-bottom: 20px;
+}
+
+.manufacturers-logo-list__item:nth-child(2) a {
+  padding: 46px;
+}
+
+.manufacturers-logo-list__item:nth-child(3) a {
+  padding: 44px 14px 44px 14px;
+}
+
+.manufacturers-logo-list__item:nth-child(4) a {
+  padding: 20px 4px 20px 4px;
+}
+
+.manufacturers-logo-list__item:nth-child(5) a {
+  padding: 53px 25px 56px;
+}
+
+.manufacturers-logo-list__item:nth-child(6) a {
+  padding: 30px 22px;
+}
+
+.manufacturers-logo-list__item:nth-child(7) a {
+  padding: 20px 22px;
+}
+
+.manufacturers-logo-list__item:nth-child(8) a {
+  padding: 30px 12px 22px;
+}
+
+.manufacturers-logo-list__link:hover {
+  box-shadow: 0 0 5px 11px;
+}
+
 /* Сервисы */
 .service {
   background-color: #f4f8f9;
@@ -1018,8 +1069,63 @@ a {
 
 /* CATALOG.HTML */
 .main-header-account {
-  width: 940px;
-  margin: 0 auto;
+  font-size: 0;
+}
+
+.main-account-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.login {
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+.login__link {
+  padding-top: 10px;
+  padding-right: 68px;
+  padding-left: 45px;
+  padding-bottom: 10px;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 555px;
+  top: 101px;
+  background-image: url("../img/svg/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 300px;
+  top: 101px;
+  background-image: url("../img/svg/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login__link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login__link:hover {
+  color: #000000;
+}
+
+.login__link:active {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .main-account-list__link {
@@ -1037,25 +1143,25 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.login__link {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
+.main-account-list__item:nth-child(1) a {
+  padding-left: 18px;
+  margin-right: 30px;
 }
 
-.login__link:hover {
-  color: #000000;
+.container-main {
+  margin-top: 19px;
 }
 
-.login__link:active {
-  color: rgba(0, 0, 0, 0.3)
+.breadcrumbs-list__image {
+  width: 15px;
+  height: 12px;
 }
 
 .breadcrumbs-list {
+  display: flex;
   width: 940px;
   margin: 0 auto;
-  padding-left: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs-list__item {
@@ -1063,6 +1169,7 @@ a {
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  padding-right: 40px;
 }
 
 .breadcrumbs-list__link {
@@ -1077,13 +1184,15 @@ a {
   background-color: #f2f6f8;
   width: 940px;
   margin: 0 auto;
-  padding-left: 30px;
+  padding-top: 30px;
+  padding-left: 27px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .filter-manufacturers {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .filter-manufacturers-form fieldset {
@@ -1167,28 +1276,39 @@ a {
   color: #ffffff;
   background-color: #ee3643;
   position: relative;
-  width: 80px;
+  width: 140px;
   margin: 10px auto;
   margin-bottom: 20px;
-  padding: 10px 30px;
-  border-radius: 2px;
+  padding: 8px 28px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
 }
 
-.filter-and-catalog {
-  width: 940px;
-  display: flex;
-  justify-content: space-between;
+.price__actual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -36px;
+  width: 0;
+  height: 0;
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .catalog-goods {
-  width: 940px;
   margin: 20px auto;
+}
+
+.container-catalog-goods {
+  width: 700px;
 }
 
 .catalog-goods-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 0;
 }
 
 .catalog-goods-list__item {
@@ -1214,7 +1334,19 @@ a {
 }
 
 .catalog-goods-list__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 128px;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
   display: none;
+}
+
+.catalog-goods-list__item:hover .catalog-goods-list__button {
+  display: block;
 }
 
 .catalog-goods-list__buy-button {
@@ -1223,6 +1355,13 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #63a63e;
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
 }
 
 .catalog-goods-list__buy-button:hover {
@@ -1239,6 +1378,13 @@ a {
   text-transform: uppercase;
   color: #32425c;
   background-color: #ffffff;
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
 }
 
 .catalog-goods-list__bookmarks-button:hover {}
@@ -1247,7 +1393,6 @@ a {
   color: rgba(50, 66, 92, 0.3)
 }
 
-/* Вторая часть задания каталог */
 /* Фильтр */
 .name {
   background-color: #f7f3ec;
@@ -1259,6 +1404,8 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Ползунок с ценой*/
@@ -1285,16 +1432,24 @@ a {
 
 /* Сортировка */
 .filter {
-  width: 200px;
+  width: 220px;
   margin: 0 auto;
-  padding: 0 10px;
-  padding-bottom: 25px;
+}
+
+.filter-and-sorting {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sorting-wrapper {
+  width: 700px;
 }
 
 .filter-sorting {
-  width: 940px;
+  display: flex;
+  width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
   background-color: #f7f3ec;
 }
 
@@ -1304,6 +1459,10 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
+}
+
+.filter-sorting-list {
+  display: flex;
 }
 
 .filter-sorting-list__link {
