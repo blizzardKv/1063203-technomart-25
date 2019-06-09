@@ -133,14 +133,11 @@
         <section class="container__filter-sorting filter-sorting">
           <h2 class="filter-sorting__title">Сортировка:</h2>
           <ul class="filter-sorting__list filter-sorting-list">
-            <li class="filter-sorting-list__item"><a class="filter-sorting-list__link" href="#">По цене</a></li>
+            <li class="filter-sorting-list__item"><a class="filter-sorting-list__link-active" href="#">По цене</a></li>
             <li class="filter-sorting-list__item"><a class="filter-sorting-list__link" href="#">По типу</a></li>
             <li class="filter-sorting-list__item"><a class="filter-sorting-list__link" href="#">По функционалу</a></li>
-            <li class="filter-sorting-list__item"><a class="filter-sorting-list__link" href="#">Вверх</a></li>
-            <li class="filter-sorting-list__item"><a class="filter-sorting-list__link" href="#">Вниз</a></li>
           </ul>
         </section>
-
         <section class="container__catalog container-catalog-goods">
           <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-goods__list  catalog-goods-list">
@@ -370,12 +367,14 @@
 
   <section class="cart">
     <h2 class="visually-hidden">Товар</h2>
-    <p><img src="img/svg/modal-cart-1.svg" alt="Успешно" width="66" height="66">Товар добавлен в корзину!</p>
-    <div class="cart-order-place">
-      <a href="#">Оформить заказ</a>
-      <button class="cart-order-place__continue" type="button" name="continue-buying">Продолжить покупки</button>
+    <div class="cart__wrapper">
+      <button class="cart__close-button" type="button" aria-label="Закрыть"></button>
+      <p class="cart__text-successful">Товар добавлен в корзину!</p>
+      <div class="cart-order-place">
+        <a class="cart__button-order red-button" href="#">Оформить заказ</a>
+        <button class="cart__button-continue" type="button" name="continue-buying">Продолжить покупки</button>
+      </div>
     </div>
-    <p><button class="cart__close" type="button"><img src="img/svg/modal-cart-2.svg" alt="Закрыть информационное окно товара" width="21" height="21"> </button> </p>
   </section>
 </body>
 

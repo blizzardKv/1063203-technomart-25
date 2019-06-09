@@ -217,32 +217,32 @@
           <div class="service__slide service-slide">
             <ul class="service-slide__list service-slide-list">
               <li class="service-slide-list__item">
-                <button class="service-slide-list__button-active" type="button">Доставка</button></li>
+                <a class="service-slide-list__button-active">Доставка</a></li>
               <li class="service-slide-list__item">
-                <button class="service-slide-list__button" type="button">Гарантия</button></li>
+                <a class="service-slide-list__button">Гарантия</a></li>
               <li class="service-slide-list__item">
-                <button class="service-slide-list__button" type="button">Кредит</button></li>
+                <a class="service-slide-list__button">Кредит</a></li>
             </ul>
           </div>
           <div class="service-slide__wrapper">
-            <div class="service-slide__delivery" id="service-layer-1">
+            <div class="service-slide__delivery" data-index="0">
               <h3 class="service-slide-description__title">Доставка</h3>
               <p class="service-slide-description__text">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем, <br>
                 поднимая него на ваш этаж!</p>
             </div>
-            <div class="service-slide__warranty" id="service-layer-2">
+            <div class="service-slide__warranty" data-index="1">
               <h3 class="service-slide-description__title">Гарантия</h3>
               <p class="service-slide-description__text">Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.</p>
             </div>
-            <div class="service-slide__credit" id="service-layer-3">
+            <div class="service-slide__credit" data-index="2">
               <h3 class="service-slide-description__title">Кредит</h3>
               <p class="service-slide-description__text">Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
-              <button class="service-slide-list__button-send red-button" type="button">Отправить заявку</button>
+              <a class="service-slide-list__button-send red-button">Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -253,10 +253,10 @@
       <div class="about__wrapper about-wrapper">
         <div class="about__technomart about-technomart">
 
-          <h2 class="about-technomart__second-headline">КОМПАНИЯ «Техномарт»</h2>
+          <h2 class="about-technomart__second-headline">Компания «Техномарт»</h2>
           <p class="about-technomart__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p class="about-technomart__description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>
+          <p class="about-technomart__description-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями: </p>
 
           <ul class="about-technomart__delivery-list delivery-list">
             <li class="delivery-list__item">Деловые линии</li>
@@ -370,13 +370,14 @@
   </section>
   <section class="popup-map">
     <h2 class="visually-hidden">Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002796!2d30.320858715697586!3d59.938719169054686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559885829942!5m2!1sru!2sru"
-      width="940" height="446" style="border:0" allowfullscreen></iframe>
+
     <div class="popup-map__image">
-      <img src="img/map-popup.jpg" alt="Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19" width="970" height="476">
+      <button class="popup-map__form-close-button" type="button" aria-label="Закрыть"></button>
+      <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002796!2d30.320858715697586!3d59.938719169054686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559885829942!5m2!1sru!2sru"
+      width="940" height="446" style="border:0" allowfullscreen></iframe> -->
+      <img src="img/map-popup.png" alt="Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19" width="970" height="476">
     </div>
-    <button class="popup-map__form-close-button" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
