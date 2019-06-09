@@ -1307,10 +1307,8 @@ a {
 }
 
 .text-block {
-  margin: 0;
-}
-
-.text-block__text {
+  max-width: 170px;
+  margin: 0 auto;
   display: block;
   font-size: 18px;
   line-height: 20px;
@@ -1342,7 +1340,6 @@ a {
   width: 140px;
   margin: 11px auto 21px;
   padding: 10px 36px;
-  color: #ffffff;
   border-radius: 3px;
 }
 
@@ -1355,6 +1352,10 @@ a {
   height: 0;
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
+}
+
+.non-discount {
+  margin-top: 40px;
 }
 
 .catalog-goods-list__item:nth-child(4) .text-block__text {
