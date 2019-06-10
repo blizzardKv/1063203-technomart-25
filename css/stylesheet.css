@@ -182,7 +182,7 @@ input[type="radio"] {
 }
 
 .site-navigation-list__item:nth-child(1) a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 14px;
   height: 16px;
@@ -194,7 +194,7 @@ input[type="radio"] {
 }
 
 .site-navigation-list__item:nth-child(2) a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 15px;
   height: 15px;
@@ -254,7 +254,7 @@ input[type="radio"] {
 }
 
 .main-header__telephone-number::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 19px;
   height: 19px;
@@ -312,7 +312,7 @@ input[type="radio"] {
 }
 
 .user-navigation-list__item:nth-child(1) a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 20px;
   height: 17px;
@@ -334,6 +334,7 @@ input[type="radio"] {
 
 .main-navigation {
   width: 940px;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -449,7 +450,7 @@ input[type="radio"] {
 }
 
 .delivery-list__item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 30px;
   left: -35px;
@@ -460,6 +461,7 @@ input[type="radio"] {
 
 .main-footer__address {
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
   color: #f1f5f7;
 }
@@ -774,7 +776,7 @@ input[type="radio"] {
 
 .promo__slider::before,
 .promo__slider::after {
-  content: "";
+  content: '';
   visibility: hidden;
 }
 
@@ -994,17 +996,18 @@ input[type="radio"] {
 }
 
 .manufacturers-logo-list__link:hover {
-  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-logo-list__link:active {
-  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 /* Сервисы */
 .service {
   background-color: #f4f8f9;
   padding-top: 40px;
+  margin-bottom: 25px;
 }
 
 .service-block {
@@ -1074,10 +1077,6 @@ input[type="radio"] {
 .service-slide-list__button:active {
   color: #32425c;
   background-color: #ffffff;
-}
-
-.service-slide-list__item:nth-child(3) {
-  margin-bottom: 97px;
 }
 
 /* Несмотря на то, что у названий сервисов "Кредит", "Доставка" и "Гарантия" разные величины line-height в дизайне,
@@ -1164,7 +1163,7 @@ input[type="radio"] {
 }
 
 .login__link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 20px;
   height: 18px;
@@ -1176,7 +1175,7 @@ input[type="radio"] {
 }
 
 .login__link::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 20px;
   height: 18px;
@@ -1228,7 +1227,7 @@ input[type="radio"] {
 
 .main-account-list__item:nth-child(2) a::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: #32425c;
   left: -17px;
   top: 8px;
@@ -1262,7 +1261,7 @@ input[type="radio"] {
 }
 
 .breadcrumbs-list__item:last-child::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 1px;
@@ -1273,7 +1272,7 @@ input[type="radio"] {
 }
 
 .breadcrumbs-list__item:last-child::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 1px;
@@ -1288,7 +1287,7 @@ input[type="radio"] {
 }
 
 .breadcrumbs-list__item:not(:first-child) a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 1px;
@@ -1299,7 +1298,7 @@ input[type="radio"] {
 }
 
 .breadcrumbs-list__item:not(:first-child) a::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 1px;
@@ -1334,6 +1333,27 @@ input[type="radio"] {
 
 .filter-manufacturers-form fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-list__item {
+  margin-bottom: 19px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+  padding-left: 45px;
+}
+
+.checkbox-list__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-manufacturers-form__input+label::before {
+  content: '';
+  position: absolute;
 }
 
 .filter-manufacturers-form__checkbox-list,
@@ -1428,7 +1448,7 @@ input[type="radio"] {
 }
 
 .price__actual::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -20px;
@@ -1493,7 +1513,7 @@ input[type="radio"] {
 }
 
 .catalog-goods-list__item:hover {
-  box-shadow: 0px 10px 25px 0px rgba(41, 52, 29, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 29, 0.5);
 }
 
 .catalog-goods-list__item:hover .catalog-goods-list__button {
@@ -1511,12 +1531,12 @@ input[type="radio"] {
   width: 135px;
   margin: 5px auto 10px;
   padding: 10px 0 8px 0;
-  box-shadow: 0px 3px 0px 0px rgba(54, 115, 21, 1);
+  box-shadow: 0 3px 0 0 rgba(54, 115, 21, 1);
   border-radius: 3px;
 }
 
 .catalog-goods-list__buy-button::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 14px;
   height: 16px;
@@ -1566,6 +1586,7 @@ input[type="radio"] {
 /* Фильтр */
 .name {
   background-color: #f7f3ec;
+  margin-bottom: 12px;
 }
 
 .name__title {
@@ -1661,8 +1682,18 @@ input[type="radio"] {
   right: -54px;
   bottom: 14px;
   border: 5px solid transparent;
-  border-top: 10px solid #ee3643;
+  border-top: 10px solid #c5c5c5;
   transform: rotate(180deg);
+}
+
+.filter-sorting-list:hover::before,
+.filter-sorting-list:hover::after {
+  border-top: 10px solid #231f20;
+}
+
+.filter-sorting-list:active::before,
+.filter-sorting-list:active::after {
+  border-top: 10px solid #ee3643;
 }
 
 .filter-sorting-list__link {
@@ -1707,7 +1738,6 @@ input[type="radio"] {
 .pagination {
   width: 285px;
   margin: 0 auto 60px;
-  background-color: yellow;
 }
 
 .pagination-list {
@@ -1743,6 +1773,14 @@ input[type="radio"] {
 
 .pagination-list__item:nth-child(4) a {
   padding: 10px 28px 10px 28px;
+}
+
+.pagination-list__item a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list__item a:active {
+  border: 1px solid #ee3643;
 }
 
 /* Описание перфоратора */
@@ -1805,7 +1843,7 @@ input[type="radio"] {
 
 .write-us__form-close-button::before,
 .write-us__form-close-button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 9px;
   left: 8px;
@@ -1904,7 +1942,7 @@ input[type="radio"] {
   width: 970px;
   height: 476px;
   margin: auto;
-  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
   transform: translate(-50%, -50%);
 }
 
@@ -1915,15 +1953,13 @@ input[type="radio"] {
   z-index: 10;
   width: 21px;
   height: 21px;
-  background: none;
-  border: none;
 }
 
 .popup-map__form-close-button::before,
 .popup-map__form-close-button::after {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 25px;
   height: 4px;
   background-color: #ee3643;
@@ -1978,7 +2014,7 @@ input[type="radio"] {
 
 .cart__close-button::before,
 .cart__close-button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 9px;
   left: 8px;
@@ -2004,7 +2040,7 @@ input[type="radio"] {
 }
 
 .cart__wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url("../img/svg/cart-successful.svg");
   background-repeat: no-repeat;
