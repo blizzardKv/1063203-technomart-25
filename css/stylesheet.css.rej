@@ -1,0 +1,21 @@
+diff a/css/stylesheet.css b/css/stylesheet.css	(rejected hunks)
+@@ -134,19 +134,17 @@
+    background-color: #ffffff;
+  }
+  
+ -input[type="search"]:active~.search-image,
+ -input[type="search"]:focus~.search-image {
+ -  background-image: url("../img/svg/icon-search-red.svg");
+ -  background-repeat: no-repeat;
+ -  background-position: 0 0;
+ -  opacity: 1;
+ -}
+ -
+  /*  */
+  .site-navigation-list__item {
+-   width: 150px;
+    height: 100%;
+-   padding: 12px 0 12px 20px;
+  }
+  
+  .site-navigation-list__item:not(:nth-child(3)):hover {
