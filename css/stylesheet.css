@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+/* Нет наполнения из админки, можем обнулить */
 ul,
 ol {
   margin: 0;
@@ -339,6 +340,7 @@ input[type="radio"] {
 }
 
 .main-navigation-list {
+  height: inherit;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -372,7 +374,7 @@ input[type="radio"] {
 
 .about {
   width: 940px;
-  margin: 0 auto 85px;
+  margin: 0 auto 87px;
 }
 
 .about-wrapper {
@@ -388,20 +390,25 @@ input[type="radio"] {
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 26px;
 }
 
 .about-technomart__description {
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
   margin-bottom: 25px;
 }
 
 .about-technomart__description-second {
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
+  font-weight: 400;
+  color: #000000;
   margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .about-technomart__button {
@@ -660,7 +667,7 @@ input[type="radio"] {
   background-repeat: no-repeat;
   background-position: 213px 30px;
   width: 300px;
-  padding: 0 22px;
+  padding: 0 25px;
 }
 
 .promo-navigation-list__item-2 {
@@ -670,7 +677,7 @@ input[type="radio"] {
   background-repeat: no-repeat;
   background-position: 197px 32px;
   width: 300px;
-  padding: 0 22px;
+  padding: 0 25px;
 }
 
 .promo-navigation-list__item-3 {
@@ -705,6 +712,7 @@ input[type="radio"] {
 
 .promo-navigation-list__item-6 {
   grid-area: slider;
+  background-color: #32425c;
 }
 
 .promo-navigation-list {
@@ -726,36 +734,21 @@ input[type="radio"] {
   font-weight: bold;
   color: #ffffff;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 /* Бэкграунды линков */
 .promo-navigation-list__link {
+  display: block;
+  width: 135px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-}
-
-.link-1 {
-  padding: 11px 24px 10px 27px;
-}
-
-.link-2 {
-  padding: 12px 26px 14px 29px;
-}
-
-.link-3 {
-  padding: 12px 29px 13px 30px;
-}
-
-.link-4 {
-  padding: 10px 21px 14px 21px;
-}
-
-.link-5 {
-  padding: 12px 35px 12px 35px;
+  padding: 10px 0 10px 0;
 }
 
 .promo-navigation-list__link:hover {
@@ -767,46 +760,36 @@ input[type="radio"] {
 }
 
 /* Слайдер-блок */
-.promo__slider {
-  min-width: 620px;
-  background-image: url("../img/slider-1.jpg");
-  background-repeat: no-repeat;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
-}
-
-.promo__slider::before,
-.promo__slider::after {
-  content: '';
-  visibility: hidden;
-}
-
-.promo__slider::before {
-  background-image: url("../img/slider-1.jpg");
-}
-
-.promo__slider::after {
-  background-image: url("../img/slider-2.jpg");
-}
-
 .main-slider {
+  width: 620px;
+  height: 266px;
   position: relative;
 }
 
-.promo-container {
+.slider-slideshow__slide:nth-child(1) {
+  position: absolute;
+  background-image: url("../img/slider-1.jpg");
   width: 620px;
-  height: 265px;
-  padding: 0 25px;
-  margin: 0;
+  height: 266px;
+}
+
+.slider-slideshow__slide:nth-child(2) {
+  position: absolute;
+  display: none;
+  background-image: url("../img/slider-2.jpg");
+  width: 620px;
+  height: 266px;
 }
 
 .slider-slideshow__title {
   font-size: 36px;
   line-height: 36px;
-  padding-top: 22px;
   margin: 0;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
+  padding-left: 24px;
+  padding-top: 24px;
 }
 
 .slider-slideshow__description {
@@ -814,66 +797,51 @@ input[type="radio"] {
   line-height: 24px;
   color: #ffffff;
   margin: 0 0 123px 0;
+  padding-left: 24px;
 }
 
 .slider-slideshow__link {
   display: inline-block;
   position: relative;
-  padding: 11px 45px 11px 49px;
-  border-radius: 2px;
-}
-
-.slider-controls {
-  position: absolute;
-  left: 270px;
-  top: 218px;
-  z-index: 20;
-  font-size: 0;
-}
-
-.slider-controls label {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 8px;
-  vertical-align: top;
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+  padding: 10px 48px 10px 48px;
+  border-radius: 3px;
+  left: 25px;
 }
 
 .slider-slideshow__left-arrow {
   position: absolute;
   top: 113px;
+  left: 23px;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .slider-slideshow__right-arrow {
   position: absolute;
   top: 113px;
-  right: -5px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
 }
 
-.slider-slideshow__slide {
-  display: none;
+.toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 10;
+  cursor: pointer;
 }
 
-#position-1:checked~.slider #slide1,
-#position-2:checked~.slider #slide2 {
-  display: block;
+.toggle-1 {
+  left: 294px;
+  bottom: 36px;
 }
 
-#position-1:checked~.slider label[for="position-1"],
-#position-2:checked~.slider label[for="position-2"] {
-  background-color: red;
-}
-
-#position-1:checked~.slider {
-  background-image: url("../img/slider-1.jpg");
-}
-
-#position-2:checked~.slider {
-  background-image: url("../img/slider-2.jpg");
+.toggle-2 {
+  right: 295px;
+  bottom: 36px;
 }
 
 /* Кнопку "Отправить заявку" во вкладке "Кредит" стилизуем по аналогии с другими красными кнопками.
@@ -1006,13 +974,14 @@ input[type="radio"] {
 /* Сервисы */
 .service {
   background-color: #f4f8f9;
-  padding-top: 40px;
-  margin-bottom: 25px;
+  min-height: 525px;
+  margin-bottom: 50px;
 }
 
 .service-block {
   width: 940px;
-  margin: 0 auto 25px;
+  padding-top: 40px;
+  margin: 0 auto;
 }
 
 .service__title {
@@ -1082,32 +1051,36 @@ input[type="radio"] {
 /* Несмотря на то, что у названий сервисов "Кредит", "Доставка" и "Гарантия" разные величины line-height в дизайне,
 присваиваем им одно значение при стилизации - после разговора с дизайнером */
 .service-slide__wrapper {
-  display: block;
   width: 642px;
   position: relative;
-  flex-grow: 1;
 }
 
 .service-slide__delivery {
-  background-image: url("../img/delivery.jpg");
-  background-repeat: no-repeat;
-  background-position: 99% 100%;
+  position: absolute;
+  width: 620px;
   min-height: 285px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .service-slide__warranty {
-  background-image: url("../img/guarantee.jpg");
-  background-repeat: no-repeat;
-  background-position: 99% 100%;
+  position: absolute;
+  width: 620px;
   min-height: 285px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   display: none;
 }
 
 .service-slide__credit {
-  background-image: url("../img/credit.jpg");
-  background-repeat: no-repeat;
-  background-position: 99% 100%;
+  position: absolute;
+  width: 620px;
   min-height: 285px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   display: none;
 }
 
@@ -1808,20 +1781,21 @@ input[type="radio"] {
 }
 
 /* всплывающие окна */
-.popup-map,
-.write-us {
+.write-us,
+.popup-map {
   display: none;
 }
 
-/*  modal-write-us*/
 .write-us {
   width: 620px;
   position: fixed;
-  top: 120px;
-  left: 450px;
+  top: 50%;
+  left: 50%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
   background-color: #ffffff;
   border-top: 7px solid #ff5357;
+  z-index: 100;
+  transform: translate(-50%, -50%);
 }
 
 .write-option-list {
@@ -1830,19 +1804,19 @@ input[type="radio"] {
   margin-bottom: 20px;
 }
 
-.write-us__form-close-button {
+.form-close-button {
   position: absolute;
   top: 8px;
   right: 19px;
   width: 21px;
   height: 21px;
   font-size: 0;
-  border: 0;
+  border: 0 none;
   cursor: pointer;
 }
 
-.write-us__form-close-button::before,
-.write-us__form-close-button::after {
+.form-close-button::before,
+.form-close-button::after {
   content: '';
   position: absolute;
   top: 9px;
@@ -1852,11 +1826,11 @@ input[type="radio"] {
   background-color: #ee3643;
 }
 
-.write-us__form-close-button::before {
+.form-close-button::before {
   transform: rotate(45deg);
 }
 
-.write-us__form-close-button::after {
+.form-close-button::after {
   transform: rotate(-45deg);
 }
 
@@ -1944,33 +1918,6 @@ input[type="radio"] {
   margin: auto;
   box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
   transform: translate(-50%, -50%);
-}
-
-.popup-map__form-close-button {
-  position: absolute;
-  top: 35px;
-  right: 35px;
-  z-index: 10;
-  width: 21px;
-  height: 21px;
-}
-
-.popup-map__form-close-button::before,
-.popup-map__form-close-button::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 25px;
-  height: 4px;
-  background-color: #ee3643;
-}
-
-.popup-map__form-close-button::before {
-  transform: rotate(45deg);
-}
-
-.popup-map__form-close-button::after {
-  transform: rotate(-45deg);
 }
 
 /* .popup-map iframe {
