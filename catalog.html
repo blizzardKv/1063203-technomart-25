@@ -17,6 +17,7 @@
         <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
           <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
           <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
+          <span class="search-image"></span>
         </form>
         <ul class="site-navigation__list site-navigation-list">
           <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Закладки: 0</a></li>
@@ -77,12 +78,25 @@
             <h2 class="name__title">Фильтр:</h2>
           </div>
 
-          <section class="filter__pricecount pricecount">
-            <h2 class="pricecount__title">Цена:</h2>
-            <input class="pricecount__input" type="range" min="0" max="30000" step="1" value="1000" id="pricecount">
-            <input class="pricecount__input" type="number" min="0" placeholder="0">
-            <input class="pricecount__input" type="number" max="30000" placeholder="30000">
-          </section>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="pricecount">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                  <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <div class="pricecount-line"></div>
         </section>
         <section class="container__filter-manufacturers filter-manufacturers">
           <h2 class="visually-hidden">Производители и питание</h2>
