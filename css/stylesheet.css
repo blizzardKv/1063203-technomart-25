@@ -329,6 +329,10 @@ input[type="radio"] {
   opacity: 1;
 }
 
+.user-navigation-list__item:nth-child(1) a:active::before {
+  opacity: 0.3;
+}
+
 .user-navigation-list__item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -434,7 +438,10 @@ input[type="radio"] {
 }
 
 .contacts-and-map__image {
-  height: auto;
+  display: block;
+  width: 300px;
+  height: 158px;
+  background: #f2f6f8 url("../img/map.jpg") no-repeat 100% 100%;
   padding-top: 19px;
   margin-bottom: 37px;
 }
@@ -775,7 +782,6 @@ input[type="radio"] {
 
 .slider-slideshow__slide:nth-child(2) {
   position: absolute;
-  display: none;
   background-image: url("../img/slider-2.jpg");
   width: 620px;
   height: 266px;
@@ -842,6 +848,16 @@ input[type="radio"] {
 .toggle-2 {
   right: 295px;
   bottom: 36px;
+}
+
+.toggle-active {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ee3643;
+  z-index: 11;
 }
 
 /* Кнопку "Отправить заявку" во вкладке "Кредит" стилизуем по аналогии с другими красными кнопками.
@@ -1781,9 +1797,12 @@ input[type="radio"] {
 }
 
 /* всплывающие окна */
-.write-us,
-.popup-map {
+.modal {
   display: none;
+}
+
+.modal-z {
+  z-index: 2;
 }
 
 .write-us {
@@ -1807,22 +1826,20 @@ input[type="radio"] {
 .form-close-button {
   position: absolute;
   top: 8px;
-  right: 19px;
+  right: 15px;
   width: 21px;
   height: 21px;
-  font-size: 0;
-  border: 0 none;
   cursor: pointer;
+  z-index: 20;
 }
 
 .form-close-button::before,
 .form-close-button::after {
   content: '';
   position: absolute;
-  top: 9px;
-  left: 8px;
-  width: 25px;
-  height: 4px;
+  top: 0;
+  width: 5px;
+  height: 22px;
   background-color: #ee3643;
 }
 
@@ -1913,21 +1930,37 @@ input[type="radio"] {
 
 .popup-map__image {
   position: relative;
-  width: 970px;
-  height: 476px;
+  width: 940px;
+  height: 446px;
   margin: auto;
   box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
   transform: translate(-50%, -50%);
 }
 
-/* .popup-map iframe {
+.popup-map iframe {
   position: relative;
   z-index: 2;
   border: none;
-} */
+  margin: 0;
+}
+
+.popup-map img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 940px;
+  height: 446px;
+}
+
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+}
+
+.modal-not-show {
+  display: none;
 }
 
 /* modal cart */
@@ -1940,42 +1973,12 @@ input[type="radio"] {
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   z-index: 40;
-  display: none;
+  /* display: none; */
 }
 
 .cart__wrapper {
-  margin-top: 65px;
+  /* margin-top: 65px; */
   position: relative;
-}
-
-.cart__close-button {
-  position: absolute;
-  top: 10px;
-  right: 19px;
-  width: 21px;
-  height: 21px;
-  font-size: 0;
-  border: 0;
-  cursor: pointer;
-}
-
-.cart__close-button::before,
-.cart__close-button::after {
-  content: '';
-  position: absolute;
-  top: 9px;
-  left: 8px;
-  width: 25px;
-  height: 4px;
-  background-color: #ee3643;
-}
-
-.cart__close-button::before {
-  transform: rotate(45deg);
-}
-
-.cart__close-button::after {
-  transform: rotate(-45deg);
 }
 
 .cart__text-successful {

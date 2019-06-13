@@ -264,9 +264,20 @@
         <div class="about__contacts-and-map contacts-and-map">
           <h2 class="contacts-and-map__headline">Контакты</h2>
           <p class="contacts-and-map__description">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
-          <img class="contacts-and-map__image" src="img/map.jpg" alt="Расположение офиса" width="300" height="158">
+          <a href="map.html" class="contacts-and-map__image" alt="Расположение офиса"></a>
           <button class="contacts-and-map__find-me-button red-button" type="button">Заблудились? Напишите нам!</button>
         </div>
+
+        <section class="modal popup-map">
+          <h2 class="visually-hidden">Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19</h2>
+          <div class="popup-map__image">
+            <button class="form-close-button" type="button" aria-label="Закрыть"></button>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002796!2d30.320858715697586!3d59.938719169054686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559885829942!5m2!1sru!2sru"
+              width="940" height="446" style="border:0" allowfullscreen></iframe>
+            <img src="img/map-popup.png" alt="Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19" width="940" height="446">
+          </div>
+        </section>
       </div>
     </section>
   </main>
@@ -337,7 +348,7 @@
     </div>
   </footer>
 
-  <section class="write-us">
+  <section class="modal write-us">
     <h2 class="visually-hidden">Напишите нам!</h2>
     <form class="write-us__form form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-write-us__write-option-list write-option-list">
@@ -361,16 +372,8 @@
     </form>
     <button class="form-close-button" type="button"></button>
   </section>
-  <section class="popup-map">
-    <h2 class="visually-hidden">Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19</h2>
-    <div class="popup-map__image">
-      <button class="form-close-button" type="button" aria-label="Закрыть"></button>
-      <!-- <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002796!2d30.320858715697586!3d59.938719169054686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559885829942!5m2!1sru!2sru"
-      width="940" height="446" style="border:0" allowfullscreen></iframe> -->
-      <img src="img/map-popup.png" alt="Карта с указанием адреса магазина: г. Санкт-Петербург, улица Большая Конюшенная, дом 19" width="970" height="476">
-    </div>
-  </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
