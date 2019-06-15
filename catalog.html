@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-header__site-bar site-navigation">
       <div class="site-navigation__wrapper">
-        <p class="site-navigation__logo main-logo"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></p>
+        <a class="site-navigation__logo main-logo" href="index.html" aria-label="Логотип сайта магазина Техномарт"><img class="main-logo__image" src="img/svg/technomart.svg" alt="Техномарт"></a>
         <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
           <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
           <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
@@ -28,22 +28,18 @@
     </nav>
 
     <div class="main-header__center-block center-block">
-      <h2 class="main-header__headline">Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта</h2>
+      <h2 class="main-header__headline">Интернет-магазин
+        строительных материалов
+        и&nbsp;инструментов для ремонта</h2>
       <div class="main-header-catalog__wrapper telephone-and-address">
-        <p class="main-header__telephone-number">
-          +7 (812) 555-05-55
-        </p>
+        <p><a class="main-header__telephone-number" href="#">+7 (812) 555-05-55</a></p>
         <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <section class="main-header__account main-header-account">
         <h2 class="visually-hidden">Работа с личным кабинетом</h2>
         <div class="user-box">
-          <p class="main-header-account__login login"><a class="login__link" href="#">
-              Равшан Джамшутович
-            </a></p>
-          <a href="#" class="user-logout" aria-label="Выход"></a>
+          <a class="login__link" href="#">Равшан Джамшутович</a>
+          <a class="user-logout" href="#" aria-label="Выход"></a>
         </div>
         <ul class="main-header-account__list main-account-list">
           <li class="main-account-list__item"><a class="main-account-list__link" href="#">Мои заказы</a></li>
@@ -55,7 +51,7 @@
       <ul class="main-navigation__list main-navigation-list">
         <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="index.html">Главная</a></li>
         <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Компания</a></li>
-        <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Каталог</a></li>
+        <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="catalog.html">Каталог</a></li>
         <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Новости</a></li>
         <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Спецпредложения</a></li>
         <li class="main-navigation-list__item"><a class="main-navigation-list__link" href="#">Доставка</a></li>
@@ -317,13 +313,11 @@
       <div class="perforator__wrapper">
         <h2 class="perforator-description__title">Пара слов о перфораторах</h2>
         <p class="perforator-description__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены
-          отбойный
-          молоток и ударная дрель.</p>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены
+          отбойный молоток и ударная дрель.</p>
       </div>
     </article>
   </main>
-
   <footer class="main-footer">
     <div class="main-footer__wrapper main-footer-wrapper">
       <nav class="main-footer__footer-navigation footer-navigation">
@@ -337,8 +331,7 @@
         </ul>
       </nav>
       <div class="main-footer__address-and-navigation address-and-navigation">
-        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
-
+        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         <nav class="main-footer__products-navigation products-navigation">
           <ul class="products-navigation__list products-navigation-list">
             <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Материалы</a></li>
@@ -349,10 +342,10 @@
         </nav>
       </div>
     </div>
+
     <div class="main-footer__footer-part-bottom footer-part-bottom">
       <div class="footer-part-bottom__wrapper">
-        <p class="footer-part-bottom__footer-copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-
+        <p class="footer-part-bottom__footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
         <div class="footer-part-bottom__footer-social footer-social">
           <ul class="footer-social__list footer-social-list">
             <li class="footer-social-list__item"><a class="footer-social-list__social-button" href="#"><span class="visually-hidden">Вконтакте</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -382,9 +375,8 @@
           </ul>
         </div>
         <div class="feedback__wrapper">
-          <p class="footer-part-bottom__feedback">Обратная связь:<br><a class="footer-part-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-
-          <p class="footer-part-bottom__htmlacademy-copyright">Разработано —<br><a class="footer-part-bottom__link" href="http://htmlacademy.ru">htmlacademy.ru</a></p>
+          <p class="footer-part-bottom__feedback">Обратная связь: <a class="footer-part-bottom__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="footer-part-bottom__htmlacademy-copyright">Разработано — <a class="footer-part-bottom__link" href="http://htmlacademy.ru">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
