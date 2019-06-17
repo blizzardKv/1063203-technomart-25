@@ -52,7 +52,7 @@ buyContinue.addEventListener("click", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.key === "Escape") {
     evt.preventDefault();
-    if (cart.classList.contains("modal-show")); {
+    if (cart.classList.contains("modal-show")) {
       cart.classList.remove("modal-show");
     }
   }
@@ -76,7 +76,7 @@ writeUsClose.addEventListener("click", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.key === "Escape") {
     evt.preventDefault();
-    if (writeUs.classList.contains("modal-show")); {
+    if (writeUs.classList.contains("modal-show")) {
       writeUs.classList.remove("modal-show");
     }
   }

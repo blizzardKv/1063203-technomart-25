@@ -17,7 +17,7 @@
         <form class="site-navigation-list__form-search form-search" action="https://echo.htmlacademy.ru" method="get">
           <input class="form-search__input" type="search" name="question" placeholder="Поиск:" id="form-search-question">
           <label class="visually-hidden" for="form-search-question">Поисковая строка</label>
-          <span class="search-image"></span>
+          <button class="search-image" type="submit"></button>
         </form>
         <ul class="site-navigation__list site-navigation-list">
           <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="#">Закладки: 0</a></li>
@@ -32,7 +32,7 @@
         строительных материалов
         и&nbsp;инструментов для ремонта</h1>
       <div class="main-header__telephone-and-address telephone-and-address">
-        <p><a class="main-header__telephone-number" href="#">+7 (812) 555-05-55</a></p>
+        <p><a class="main-header__telephone-number" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <nav class="main-header__user-bar user-navigation">
@@ -57,7 +57,7 @@
   </header>
 
   <main class="container">
-    <div class="container__promo-wrapper">
+    <section class="container__promo-wrapper">
       <h2 class="visually-hidden">Промо материалов</h2>
       <ul class="promo-navigation__list promo-navigation-list">
         <li class="promo-navigation-list__item-1">
@@ -84,26 +84,26 @@
         <li class="promo-navigation-list__item-6">
           <h2 class="visually-hidden">Блоки слайдера</h2>
           <section class="main-slider">
-            <div class="switcher switcher-1"></div>
-            <div class="switcher switcher-2"></div>
+            <div class="switcher-1 switcher-active"></div>
+            <div class="switcher-2"></div>
             <button class="slider-slideshow__left-arrow" aria-label="Кнопка переключения слайда влево"><img class="slider-slideshow__left-arrow-image" src="img/svg/icon-left.svg" width="22" height="40" alt="Стрелка влево"></button>
             <button class="slider-slideshow__right-arrow" aria-label="Кнопка переключения слайда вправо"><img class="slider-slideshow__right-arrow-image" src="img/svg/icon-right.svg" width="22" height="40" alt="Стрелка вправо"></button>
             <ul class="slider-slideshow">
               <li class="slider-slideshow__slide">
-                <h3 class="slider-slideshow__title">Дрели</h3>
-                <p class="slider-slideshow__description">Cоседям на радость</p>
+                <h3 class="slider-slideshow__title">Перфораторы</h3>
+                <p class="slider-slideshow__description">Настоящие мужские игрушки</p>
                 <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
               </li>
               <li class="slider-slideshow__slide">
-                <h3 class="slider-slideshow__title">Перфораторы</h3>
-                <p class="slider-slideshow__description">Настоящие мужские игрушки</p>
+                <h3 class="slider-slideshow__title">Дрели</h3>
+                <p class="slider-slideshow__description">Cоседям на радость</p>
                 <a class="slider-slideshow__link red-button" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
           </section>
         </li>
       </ul>
-    </div>
+    </section>
 
     <section class="container__catalog catalog">
       <div class="catalog__name catalog-name">
@@ -228,7 +228,7 @@
               <h3 class="service-slide-description__title">Кредит</h3>
               <p class="service-slide-description__text">Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
-              <button class="service-slide-list__button-send red-button">Отправить заявку</button>
+              <button class="service-slide-list__button-send red-button" type="button">Отправить заявку</button>
             </div>
           </div>
         </div>
@@ -285,7 +285,7 @@
         </ul>
       </nav>
       <div class="main-footer__address-and-navigation address-and-navigation">
-        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+        <a class="main-footer__address" href="tel:78125550555">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</a>
         <nav class="main-footer__products-navigation products-navigation">
           <ul class="products-navigation__list products-navigation-list">
             <li class="products-navigation-list__item"><a class="products-navigation-list__link" href="#">Материалы</a></li>
@@ -338,7 +338,8 @@
 
   <section class="modal write-us">
     <h2 class="visually-hidden">Напишите нам!</h2>
-    <form class="write-us__form form-write-us" action="https://echo.htmlacademy.ru" method="post">
+    <button class="form-close-button" type="button"></button>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-write-us__write-option-list write-option-list">
         <p class="write-option-list__name">
           <label class="write-option-list__text">Ваше имя:
@@ -358,13 +359,12 @@
         <button class="form-write-us__button red-button" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="form-close-button" type="button"></button>
   </section>
 
-  <section class="cart">
+  <section class="modal cart">
     <h2 class="visually-hidden">Товар</h2>
+    <button class="form-close-button" type="button" aria-label="Закрыть"></button>
     <div class="cart__wrapper">
-      <button class="form-close-button" type="button" aria-label="Закрыть"></button>
       <p class="cart__text-successful">Товар добавлен в корзину!</p>
       <div class="cart-order-place">
         <a class="cart__button-order red-button" href="#">Оформить заказ</a>
