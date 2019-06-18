@@ -102,7 +102,6 @@ input[type="radio"] {
 }
 
 .form-search {
-  line-height: 42px;
   position: relative;
   height: 100%;
   margin: 0;
@@ -110,7 +109,7 @@ input[type="radio"] {
 
 .form-search__input {
   width: 270px;
-  min-height: 42px;
+  height: 42px;
   padding-right: 5px;
   padding-left: 49px;
   color: #ffffff;
