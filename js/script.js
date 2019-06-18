@@ -26,62 +26,67 @@ if (mapLink) {
   });
 }
 
-// Корзина в каталоге
-var buyButton = document.querySelectorAll(".catalog-goods-list__buy-button");
+// Корзина
 var cart = document.querySelector(".cart");
-var buyClose = cart.querySelector(".form-close-button");
-var buyContinue = cart.querySelector(".cart__button-continue");
 
-buyButton.forEach(function(item) {
-  item.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    cart.classList.add("modal-show");
+if (cart) {
+  var buyButton = document.querySelectorAll(".catalog-goods-list__buy-button");
+  var buyClose = cart.querySelector(".form-close-button");
+  var buyContinue = cart.querySelector(".cart__button-continue");
+
+  buyButton.forEach(function(item) {
+    item.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      cart.classList.add("modal-show");
+    });
   });
-});
 
-buyClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  cart.classList.remove("modal-show");
-});
-
-buyContinue.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  cart.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.key === "Escape") {
+  buyClose.addEventListener("click", function(evt) {
     evt.preventDefault();
-    if (cart.classList.contains("modal-show")) {
-      cart.classList.remove("modal-show");
-    }
-  }
-});
+    cart.classList.remove("modal-show");
+  });
 
+  buyContinue.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    cart.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.key === "Escape") {
+      evt.preventDefault();
+      if (cart.classList.contains("modal-show")) {
+        cart.classList.remove("modal-show");
+      }
+    }
+  });
+}
 // Напишите нам
-var writeUsButton = document.querySelector(".contacts-and-map__find-me-button");
 var writeUs = document.querySelector(".write-us");
-var writeUsClose = writeUs.querySelector(".form-close-button");
+var writeUsButton = document.querySelector(".contacts-and-map__find-me-button");
 
-writeUsButton.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  writeUs.classList.add("modal-show");
-});
+if (writeUsButton) {
+  var writeUs = document.querySelector(".write-us");
+  var writeUsClose = writeUs.querySelector(".form-close-button");
 
-writeUsClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  writeUs.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.key === "Escape") {
+  writeUsButton.addEventListener("click", function(evt) {
     evt.preventDefault();
-    if (writeUs.classList.contains("modal-show")) {
-      writeUs.classList.remove("modal-show");
-    }
-  }
-});
+    writeUs.classList.add("modal-show");
+  });
 
+  writeUsClose.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    writeUs.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.key === "Escape") {
+      evt.preventDefault();
+      if (writeUs.classList.contains("modal-show")) {
+        writeUs.classList.remove("modal-show");
+      }
+    }
+  });
+}
 
 // // Слайдер в промо
 // var switch1 = document.querySelector(".swither-1");
