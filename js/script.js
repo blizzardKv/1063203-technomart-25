@@ -87,25 +87,3 @@ if (writeUsButton) {
     }
   });
 }
-
-// // Слайдер в промо
-// var switch1 = document.querySelector(".swither-1");
-// var switch2 = document.querySelector(".swither-2");
-// var slide1 = document.querySelector(".slider-slideshow__slide:nth-child(1)");
-// var slide2 = document.querySelector(".slider-slideshow__slide:nth-child(2)");
-// if (switch1) {
-//   var switch1 = document.querySelector(".toggle-1");
-//   switch1.addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     switch1.classList.add("toggle-active");
-//     slide1.classList.add("modal-show");
-//     slide2.classList.add("modal-not-show");
-//   })
-//   var switch2 = document.querySelector(".toggle-2");
-//   switch2.addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     switch2.classList.add("toggle-active");
-//     slide1.classList.add("modal-not-show");
-//     slide2.classList.add("modal-show");
-//   })
-// }
