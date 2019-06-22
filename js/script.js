@@ -87,3 +87,72 @@ if (writeUsButton) {
     }
   });
 }
+
+// Слайдер доставки
+var deliverySlide = document.querySelector(".service-slide__delivery");
+var warrantySlide = document.querySelector(".service-slide__warranty");
+var creditSlide = document.querySelector(".service-slide__credit");
+var slideButtonDelivery = document.querySelector(".service-slide-list__button-active")
+var slideButtonWarranty = document.querySelector(".service-slide-list__button-warranty");
+var slideButtonCredit = document.querySelector(".service-slide-list__button-credit")
+if (slideButtonDelivery) {
+  var deliverySlide = document.querySelector(".service-slide__delivery");
+  slideButtonDelivery.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    slideButtonDelivery.classList.add("service-slide-list__button-active");
+    deliverySlide.classList.add("modal-show");
+    if (slideButtonWarranty.classList.contains("service-slide-list__button-active")) {
+      slideButtonWarranty.classList.remove("service-slide-list__button-active");
+    }
+    if (slideButtonCredit.classList.contains("service-slide-list__button-active")) {
+      slideButtonCredit.classList.remove("service-slide-list__button-active");
+    }
+    if (warrantySlide.classList.contains("modal-show")) {
+      warrantySlide.classList.remove("modal-show");
+    }
+    if (creditSlide.classList.contains("modal-show")) {
+      creditSlide.classList.remove("modal-show");
+    }
+  });
+};
+if (slideButtonWarranty) {
+  var warrantySlide = document.querySelector(".service-slide__warranty");
+  slideButtonWarranty.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    slideButtonWarranty.classList.add("service-slide-list__button-active");
+    warrantySlide.classList.add("modal-show");
+    if (slideButtonDelivery.classList.contains("service-slide-list__button-active")) {
+      slideButtonDelivery.classList.remove("service-slide-list__button-active");
+    }
+    if (slideButtonCredit.classList.contains("service-slide-list__button-active")) {
+      slideButtonCredit.classList.remove("service-slide-list__button-active");
+    }
+    if (deliverySlide.classList.contains("modal-show")) {
+      deliverySlide.classList.remove("modal-show");
+    }
+    if (creditSlide.classList.contains("modal-show")) {
+      creditSlide.classList.remove("modal-show");
+    }
+  });
+};
+
+if (slideButtonCredit) {
+  var creditSlide = document.querySelector(".service-slide__credit");
+  slideButtonCredit.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    slideButtonCredit.classList.add("service-slide-list__button-active");
+    creditSlide.classList.add("modal-show");
+    if (slideButtonDelivery.classList.contains("service-slide-list__button-active")) {
+      slideButtonDelivery.classList.remove("service-slide-list__button-active");
+    }
+    if (slideButtonWarranty.classList.contains("service-slide-list__button-active")) {
+      slideButtonWarranty.classList.remove("service-slide-list__button-active");
+    }
+    if (deliverySlide.classList.contains("modal-show")) {
+      deliverySlide.classList.remove("modal-show");
+    }
+    if (warrantySlide.classList.contains("modal-show")) {
+      warrantySlide.classList.remove("modal-show");
+    }
+  });
+};
