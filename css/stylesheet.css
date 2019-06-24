@@ -1426,13 +1426,14 @@ input[type="search"]:focus ~ .search-image {
   font-size: 21px;
   line-height: 21px;
   position: relative;
-  min-width: 255px;
+  width: 255px;
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 12px;
   padding-left: 47px;
   color: #000000;
   background-color: #ffffff;
+  word-wrap: break-word;
 }
 
 .user-box {
@@ -1468,12 +1469,11 @@ input[type="search"]:focus ~ .search-image {
 .user-logout {
   position: relative;
   min-width: 45px;
-  height: 45px;
+  min-height: 45px;
   background-color: #ffffff;
   background-image: url("../img/svg/icon-logout.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-position: center;
+  background-position: 14px 14px;
 }
 
 .user-logout:hover {
